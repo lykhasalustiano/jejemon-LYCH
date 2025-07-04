@@ -1,0 +1,67 @@
+[
+  {
+    "timestamp": "2025-07-04T22:02:03.898382",
+    "original": "hello girl wanna talk to you for a new information",
+    "normalized": "Hello girl wanna talk to you for a new information"
+  },
+  {
+    "timestamp": "2025-07-04T22:04:57.588583",
+    "original": "h3LLoH gHuRlzZ w4nn4 t4LkZ 2 yUh p0hr 4 nEw inF0hMhuZhhHhhzZ",
+    "normalized": "H3lloh ghurlzz w4nn4 t4lkz to yuh p0hr for new inf0hmhuzhzz"
+  },
+  {
+    "timestamp": "2025-07-04T22:05:48.045430",
+    "original": "cityh",
+    "normalized": "Cityh"
+  },
+  {
+    "timestamp": "2025-07-04T22:06:57.276465",
+    "original": "pls",
+    "normalized": "Please"
+  },
+  {
+    "timestamp": "2025-07-04T22:07:02.290846",
+    "original": "kc",
+    "normalized": "Kasi"
+  },
+  {
+    "timestamp": "2025-07-04T22:07:07.343663",
+    "original": "prn",
+    "normalized": "Pero"
+  },
+  {
+    "timestamp": "2025-07-04T22:07:10.410164",
+    "original": "u",
+    "normalized": "You"
+  },
+  {
+    "timestamp": "2025-07-04T22:07:26.383157",
+    "original": "do u know that is 4 u",
+    "normalized": "Do you know that is for you"
+  },
+  {
+    "timestamp": "2025-07-04T22:18:09.078596",
+    "original": "HaL0, h0w r u? I w4nt 2 g0 2 d4 c1tyh.",
+    "normalized": "Hal0, h0w are you? i w4nt to/too g0 to/too d4 c1tyh."
+  },
+  {
+    "timestamp": "2025-07-04T22:19:35.796557",
+    "original": "btw",
+    "normalized": "Btw"
+  },
+  {
+    "timestamp": "2025-07-04T22:19:53.051471",
+    "original": "weh",
+    "normalized": "Weh"
+  },
+  {
+    "timestamp": "2025-07-04T22:20:03.188527",
+    "original": "pls",
+    "normalized": "Please"
+  },
+  {
+    "timestamp": "2025-07-04T22:20:37.011457",
+    "original": "will u pls go with me pls",
+    "normalized": "Will you please go with me please"
+  }
+]
