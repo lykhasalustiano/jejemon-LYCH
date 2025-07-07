@@ -1,4 +1,4 @@
-from translator import JejemonTranslator
+from analysis import normalize
 from interface import ConsoleInterface
 from memory import TranslationMemory
 
@@ -16,7 +16,7 @@ def main():
             ConsoleInterface.show_history()
             continue
 
-        normalized = JejemonTranslator.normalize(text)
+        normalized = normalize(text)
         TranslationMemory.save(text, normalized)
         ConsoleInterface.display(text, normalized)
 

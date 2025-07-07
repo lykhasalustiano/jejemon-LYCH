@@ -63,5 +63,80 @@
     "timestamp": "2025-07-04T22:20:37.011457",
     "original": "will u pls go with me pls",
     "normalized": "Will you please go with me please"
+  },
+  {
+    "timestamp": "2025-07-05T13:41:26.461505",
+    "original": "HelloOoo 4ries",
+    "normalized": "Hello 4ries"
+  },
+  {
+    "timestamp": "2025-07-05T13:47:14.682935",
+    "original": "bye",
+    "normalized": "Bye"
+  },
+  {
+    "timestamp": "2025-07-07T16:24:27.382261",
+    "original": "HeLlo M4hal",
+    "normalized": "hello mahal"
+  },
+  {
+    "timestamp": "2025-07-07T16:37:58.375433",
+    "original": "M4hal",
+    "normalized": "mahal"
+  },
+  {
+    "timestamp": "2025-07-07T16:38:08.526175",
+    "original": "Thankzzz",
+    "normalized": "thanczz"
+  },
+  {
+    "timestamp": "2025-07-07T16:38:21.464969",
+    "original": "D3ad",
+    "normalized": "dead"
+  },
+  {
+    "timestamp": "2025-07-07T16:38:53.291562",
+    "original": "B4kiTtt Hendi N4 lngzz ako",
+    "normalized": "vaqittt hendi na lngzz aqo"
+  },
+  {
+    "timestamp": "2025-07-07T16:39:25.927186",
+    "original": "fri3nDdd",
+    "normalized": "frienddd"
+  },
+  {
+    "timestamp": "2025-07-07T16:39:42.411800",
+    "original": "3di Wowerz",
+    "normalized": "edi wowerz"
+  },
+  {
+    "timestamp": "2025-07-07T16:41:24.116511",
+    "original": "I 1ov3 yOu",
+    "normalized": "i love yov"
+  },
+  {
+    "timestamp": "2025-07-07T16:41:47.126258",
+    "original": "I 1ov3 yOu",
+    "normalized": "i love you"
+  },
+  {
+    "timestamp": "2025-07-07T16:42:26.910594",
+    "original": "M4lungkot AkO \ud83d\ude2d",
+    "normalized": "malungqot aqo "
+  },
+  {
+    "timestamp": "2025-07-07T16:43:06.789262",
+    "original": "M4lungkot AkO \ud83d\ude2d",
+    "normalized": "malungqot aqo "
+  },
+  {
+    "timestamp": "2025-07-07T16:43:29.711758",
+    "original": "M4lungkot AkO \ud83d\ude2d",
+    "normalized": "malungqot aqo "
+  },
+  {
+    "timestamp": "2025-07-07T16:43:44.507494",
+    "original": "M4lungkot AkO \ud83d\ude2d",
+    "normalized": "malungkot ako "
   }
 ]
