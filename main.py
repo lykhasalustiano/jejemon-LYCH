@@ -1,6 +1,6 @@
-from analysis import normalize
-from interface import ConsoleInterface
-from memory import TranslationMemory
+from analysis import token_area
+from interface import display, show_history
+from memory import save_translation
 
 def main():
     print("=== Jejemon Translator ===")
@@ -13,12 +13,12 @@ def main():
         if text.lower() == 'exit':
             break
         elif text.lower() == 'history':
-            ConsoleInterface.show_history()
+            show_history()
             continue
 
-        normalized = normalize(text)
-        TranslationMemory.save(text, normalized)
-        ConsoleInterface.display(text, normalized)
+        tokenized = token_area(text)
+        save_translation(text, tokenized)
+        display(text, tokenized)
 
 if __name__ == "__main__":
     main()

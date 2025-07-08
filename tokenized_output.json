@@ -1,0 +1,62 @@
+[
+    {
+        "type": "alphabet",
+        "value": "i"
+    },
+    {
+        "type": "alphabet",
+        "value": "n"
+    },
+    {
+        "type": "alphabet",
+        "value": "a"
+    },
+    {
+        "type": "unknown",
+        "value": "a"
+    },
+    {
+        "type": "alphabet",
+        "value": "n"
+    },
+    {
+        "type": "alphabet",
+        "value": "t"
+    },
+    {
+        "type": "alphabet",
+        "value": "o"
+    },
+    {
+        "type": "alphabet",
+        "value": "k"
+    },
+    {
+        "type": "unknown",
+        "value": " "
+    },
+    {
+        "type": "alphabet",
+        "value": "n"
+    },
+    {
+        "type": "alphabet",
+        "value": "a"
+    },
+    {
+        "type": "unknown",
+        "value": " "
+    },
+    {
+        "type": "unknown",
+        "value": "a"
+    },
+    {
+        "type": "alphabet",
+        "value": "k"
+    },
+    {
+        "type": "alphabet",
+        "value": "o"
+    }
+]
