@@ -30,8 +30,33 @@
 # 
 #         }
 
+import json
+import re
+from difflib import SequenceMatcher
 
-import json #from here...
+class TextProcessor:
+    @staticmethod
+    def validate_text(text):
+        """Validate input text to ensure it contains only allowed characters."""
+        return bool(re.match(r'^[\w\s~!@#$%^&*()_+=\-\[\]{}|\\:;"\',.?/]*$', text))
+
+    @staticmethod
+    def string_similarity(a, b):
+        """Calculate similarity ratio between two strings."""
+        return SequenceMatcher(None, a, b).ratio()
+
+    @staticmethod
+    def correct_typo(token, lexicon):
+        """Correct a token based on similarity to known lexicon entries."""
+        if token in lexicon:
+            return lexicon[token]
+        similarities = [(key, TextProcessor.string_similarity(token, key)) 
+                       for key in lexicon.keys()]
+        best_match = max(similarities, key=lambda x: x[1])
+        if best_match[1] > 0.6:  # Similarity threshold
+            return lexicon[best_match[0]]
+        return token
+
 
 def load_lexicons():
     with open("lexicon/alphabet.json", "r", encoding="utf-8") as f:

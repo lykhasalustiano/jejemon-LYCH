@@ -243,5 +243,50 @@
     "timestamp": "2025-07-08T23:05:08.500219",
     "original": "1n4ant0K n4 aK0",
     "normalized": "inaantok na ako"
+  },
+  {
+    "timestamp": "2025-07-09T14:50:51.854975",
+    "original": "1n4ant0k n4 ak0",
+    "normalized": "inaantok na ako"
+  },
+  {
+    "timestamp": "2025-07-09T14:51:55.691155",
+    "original": "where k4 n4 d2 n4 u5",
+    "normalized": "where ka na dz na us"
+  },
+  {
+    "timestamp": "2025-07-10T23:44:25.010656",
+    "original": "h3ll0! h0w 4r3 y0u",
+    "normalized": "hello how are you"
+  },
+  {
+    "timestamp": "2025-07-10T23:44:31.787990",
+    "original": "dcdc",
+    "normalized": "dcdc"
+  },
+  {
+    "timestamp": "2025-07-10T23:44:37.083447",
+    "original": "hell-",
+    "normalized": "hell"
+  },
+  {
+    "timestamp": "2025-07-10T23:44:43.883208",
+    "original": "woe",
+    "normalized": "woe"
+  },
+  {
+    "timestamp": "2025-07-10T23:44:52.606873",
+    "original": "wh0e are to",
+    "normalized": "whoe yre to"
+  },
+  {
+    "timestamp": "2025-07-10T23:45:07.293162",
+    "original": "wh0 4r3 y0u",
+    "normalized": "who are you"
+  },
+  {
+    "timestamp": "2025-07-10T23:52:09.057874",
+    "original": "wh0 d0 y0u think y0u 4r3 |_1k3 y0u c4r3",
+    "normalized": "who do you think you are like you care"
   }
 ]

@@ -1,6 +1,58 @@
 [
     {
         "type": "alphabet",
+        "value": "w"
+    },
+    {
+        "type": "alphabet",
+        "value": "h"
+    },
+    {
+        "type": "alphabet",
+        "value": "o"
+    },
+    {
+        "type": "unknown",
+        "value": " "
+    },
+    {
+        "type": "alphabet",
+        "value": "d"
+    },
+    {
+        "type": "alphabet",
+        "value": "o"
+    },
+    {
+        "type": "unknown",
+        "value": " "
+    },
+    {
+        "type": "alphabet",
+        "value": "y"
+    },
+    {
+        "type": "alphabet",
+        "value": "o"
+    },
+    {
+        "type": "alphabet",
+        "value": "u"
+    },
+    {
+        "type": "unknown",
+        "value": " "
+    },
+    {
+        "type": "alphabet",
+        "value": "t"
+    },
+    {
+        "type": "alphabet",
+        "value": "h"
+    },
+    {
+        "type": "alphabet",
         "value": "i"
     },
     {
@@ -9,26 +61,6 @@
     },
     {
         "type": "alphabet",
-        "value": "a"
-    },
-    {
-        "type": "unknown",
-        "value": "a"
-    },
-    {
-        "type": "alphabet",
-        "value": "n"
-    },
-    {
-        "type": "alphabet",
-        "value": "t"
-    },
-    {
-        "type": "alphabet",
-        "value": "o"
-    },
-    {
-        "type": "alphabet",
         "value": "k"
     },
     {
@@ -37,19 +69,43 @@
     },
     {
         "type": "alphabet",
-        "value": "n"
+        "value": "y"
     },
     {
         "type": "alphabet",
-        "value": "a"
+        "value": "o"
+    },
+    {
+        "type": "alphabet",
+        "value": "u"
     },
     {
         "type": "unknown",
         "value": " "
     },
     {
-        "type": "unknown",
+        "type": "alphabet",
         "value": "a"
+    },
+    {
+        "type": "alphabet",
+        "value": "r"
+    },
+    {
+        "type": "alphabet",
+        "value": "e"
+    },
+    {
+        "type": "unknown",
+        "value": " "
+    },
+    {
+        "type": "alphabet",
+        "value": "l"
+    },
+    {
+        "type": "alphabet",
+        "value": "i"
     },
     {
         "type": "alphabet",
@@ -57,6 +113,42 @@
     },
     {
         "type": "alphabet",
+        "value": "e"
+    },
+    {
+        "type": "unknown",
+        "value": " "
+    },
+    {
+        "type": "alphabet",
+        "value": "y"
+    },
+    {
+        "type": "alphabet",
         "value": "o"
+    },
+    {
+        "type": "alphabet",
+        "value": "u"
+    },
+    {
+        "type": "unknown",
+        "value": " "
+    },
+    {
+        "type": "alphabet",
+        "value": "c"
+    },
+    {
+        "type": "alphabet",
+        "value": "a"
+    },
+    {
+        "type": "alphabet",
+        "value": "r"
+    },
+    {
+        "type": "alphabet",
+        "value": "e"
     }
 ]
