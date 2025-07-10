@@ -1,14 +1,3 @@
-# import re
-
-# class JejemonTranslator:
-#     JEJEMON_MAP = {
-#         "7h": "cityh", "0": "o", "4q": "ako", 
-#         "aq": "ako", "p": "pa", "l": "ll",
-#         "3": "e", "1": "i", "2": "to", "4": "for",
-#         "u": "you", "r": "are", "y": "why",
-#         "pls": "please", "kc": "kasi", "prn": "pero"
-#     }
-
 #     @classmethod
 #     def normalize(cls, text):
 #         """Convert Jejemon text to standard Filipino"""
@@ -32,7 +21,6 @@
 
 import json
 import re
-from difflib import SequenceMatcher
 
 class TextProcessor:
     @staticmethod
@@ -42,18 +30,60 @@ class TextProcessor:
 
     @staticmethod
     def string_similarity(a, b):
-        """Calculate similarity ratio between two strings."""
+        """Calculate similarity ratio between two strings using SequenceMatcher."""
+        from difflib import SequenceMatcher
         return SequenceMatcher(None, a, b).ratio()
 
     @staticmethod
+    def levenshtein_ratio(s1, s2):
+        """Calculate Levenshtein similarity ratio between two strings."""
+        len1, len2 = len(s1), len(s2)
+        dp = [[0 for _ in range(len2 + 1)] for _ in range(len1 + 1)]
+
+        for i in range(len1 + 1):
+            dp[i][0] = i
+        for j in range(len2 + 1):
+            dp[0][j] = j
+
+        for i in range(1, len1 + 1):
+            for j in range(1, len2 + 1):
+                cost = 0 if s1[i - 1] == s2[j - 1] else 1
+                dp[i][j] = min(
+                    dp[i - 1][j] + 1,      # Deletion
+                    dp[i][j - 1] + 1,      # Insertion
+                    dp[i - 1][j - 1] + cost  # Substitution
+                )
+
+        distance = dp[len1][len2]
+        max_len = max(len1, len2)
+        return (1 - distance / max_len) * 100 if max_len != 0 else 100
+
+    @staticmethod
     def correct_typo(token, lexicon):
-        """Correct a token based on similarity to known lexicon entries."""
+        """Correct a token based on similarity to known lexicon entries using Levenshtein ratio."""
         if token in lexicon:
             return lexicon[token]
-        similarities = [(key, TextProcessor.string_similarity(token, key)) 
-                       for key in lexicon.keys()]
+        
+        #----------------------------------------------------------------------------------------------------
+        #  Ang Levenshtein ratio ay ginagamit para ikumpara ang token example sa bawat key 
+        # sa lexicon para ma compute nya kung gaano sila magkapareho.
+        #----------------------------------------------------------------------------------------------------
+
+        similarities = [
+            (key, TextProcessor.levenshtein_ratio(token, key)) for key in lexicon.keys()
+        ]
+
+        #----------------------------------------------------------------------------------------------------
+        # Hanapin nya pinaka close na match
+        #----------------------------------------------------------------------------------------------------
+        
         best_match = max(similarities, key=lambda x: x[1])
-        if best_match[1] > 0.6:  
+
+        #----------------------------------------------------------------------------------------------------
+        # kapag may similarity 60% pataas mag assume sya na typo sya at tama lang 
+        #----------------------------------------------------------------------------------------------------
+
+        if best_match[1] > 60:  
             return lexicon[best_match[0]]
         return token
 
@@ -74,6 +104,7 @@ def load_lexicons():
 # itong function na load_lexicon ginawa ko para mabasa yung lexicon file na nasa .json para kapag
 # nag tokenize may data na manggagaling dito na kailangan sa tokenization (ready na yung data)
 #----------------------------------------------------------------------------------------------------
+
 
 def build_reverse_lexicon(alphabet): # from here...
     reverse = {}
@@ -124,7 +155,7 @@ def tokenize(text, alphabet, emoticons, special_chars): # from here...
         #------------------------------------------------------------------------------------------
         # kung walang makitang match sa alphabet, irereview neto yung character sa position "i"
         #------------------------------------------------------------------------------------------
-
+   
             if char in special_chars: #from here...
                 tokens.append({
                     "type": "special_char",
@@ -148,12 +179,13 @@ def tokenize(text, alphabet, emoticons, special_chars): # from here...
             #---------------------------------------------------------------------------------------------------
 
     return tokens # to here...
-
+ 
     #-----------------------------------------------------------------------------------------------------------------------------
     # ito yung pinaka tokenization part, dito sa function na ito ang ginagawa niyan yan yung nag seseperate ng input text ni user
     # bali kaya niya hinihiwa-hiwalay para ma classify niya kung ano ibig sabihin nung bawat text or bawat laman ng input ni user.
     # sa pamamagitan kasi non magkaka output na ng normal text version.
     #-----------------------------------------------------------------------------------------------------------------------------
+
 
 def token_area(text): #from here
     alphabet, emoticons, special_chars = load_lexicons()
