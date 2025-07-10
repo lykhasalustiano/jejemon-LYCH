@@ -53,7 +53,7 @@ class TextProcessor:
         similarities = [(key, TextProcessor.string_similarity(token, key)) 
                        for key in lexicon.keys()]
         best_match = max(similarities, key=lambda x: x[1])
-        if best_match[1] > 0.6:  # Similarity threshold
+        if best_match[1] > 0.6:  
             return lexicon[best_match[0]]
         return token
 
