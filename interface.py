@@ -12,7 +12,7 @@ def display(original, normalized):
     border = "=" * 50
     print(f"\n{border}")
     print(f"{COLORS['red']}Original: {COLORS['reset']}{original}")
-    print(f"{COLORS['green']}Normalized: {COLORS['reset']}{normalized}")
+    print(f"{COLORS['green']}Translated: {COLORS['reset']}{normalized}")
     print(border)
 
 def show_history():

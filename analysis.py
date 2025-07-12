@@ -1,28 +1,7 @@
-#     @classmethod
-#     def normalize(cls, text):
-#         """Convert Jejemon text to standard Filipino"""
-#         text = text.lower()
-#         for jej, norm in cls.JEJEMON_MAP.items():
-#             text = re.sub(rf'\b{jej}\b', norm, text)
-#         text = re.sub(r'(.)\1{2,}', r'\1', text)
-#         return text.capitalize()
-
-#     @classmethod
-#     def analyze(cls, text):
-#         """Return translation with statistics"""
-#         normalized = cls.normalize(text)
-#         return {
-#             'original': text,
-#             'normalized': normalized,
-#             'length_diff': len(text) - len(normalized),
-#             'changed': text.lower() != normalized.lower()
-# 
-#         }
-
 import json
 import re
 
-class TextProcessor:
+class ElizaProcessor:
     @staticmethod
     def validate_text(text):
         """Validate input text to ensure it contains only allowed characters."""
@@ -61,30 +40,33 @@ class TextProcessor:
     @staticmethod
     def correct_typo(token, lexicon):
         """Correct a token based on similarity to known lexicon entries using Levenshtein ratio."""
-        if token in lexicon:
-            return lexicon[token]
-        
+        lowered = token.lower()
+
+        # 🔥 UPDATED: Check if token matches *any variant* in lexicon
+        for key, variants in lexicon.items():
+            if lowered in variants:
+                return key  # Return the normalized word (key) if a variant matches
+
         #----------------------------------------------------------------------------------------------------
         #  Ang Levenshtein ratio ay ginagamit para ikumpara ang token example sa bawat key 
         # sa lexicon para ma compute nya kung gaano sila magkapareho.
         #----------------------------------------------------------------------------------------------------
-
-        similarities = [
-            (key, TextProcessor.levenshtein_ratio(token, key)) for key in lexicon.keys()
-        ]
+        similarities = []
+        for key, variants in lexicon.items():
+            for variant in variants:
+                ratio = ElizaProcessor.levenshtein_ratio(lowered, variant)
+                similarities.append((key, ratio))
 
         #----------------------------------------------------------------------------------------------------
         # Hanapin nya pinaka close na match
         #----------------------------------------------------------------------------------------------------
-        
         best_match = max(similarities, key=lambda x: x[1])
 
         #----------------------------------------------------------------------------------------------------
         # kapag may similarity 60% pataas mag assume sya na typo sya at tama lang 
         #----------------------------------------------------------------------------------------------------
-
         if best_match[1] > 60:  
-            return lexicon[best_match[0]]
+            return best_match[0]
         return token
 
 
@@ -98,7 +80,10 @@ def load_lexicons():
     with open("lexicon/special_characters.json", "r", encoding="utf-8") as f:
         special_chars = json.load(f)
 
-    return alphabet, emoticons, special_chars # to here....  
+    with open("lexicon/eliza_rules.json", "r", encoding="utf-8") as f:  # <<<<<<< IDINAGDAG: Load ELIZA rules
+        eliza_rules = json.load(f)
+
+    return alphabet, emoticons, special_chars, eliza_rules # to here....  
 
 #----------------------------------------------------------------------------------------------------
 # itong function na load_lexicon ginawa ko para mabasa yung lexicon file na nasa .json para kapag
@@ -119,6 +104,28 @@ def build_reverse_lexicon(alphabet): # from here...
 # bali halimbawa: kung sa JSON "a": ["4", "@", "a"], gagawin niyang "4": "a", "@": "a", "a": "a".
 # ito yung ginagamit para makilala agad ang jejemon letter at ma-convert ito pabalik sa normal na letter.
 #----------------------------------------------------------------------------------------------------
+
+
+def normalize_text(text, alphabet): # <<<<<<< IDINAGDAG: Normalization bago mag-tokenize
+    reverse_lex = build_reverse_lexicon(alphabet)  
+    lowered = text.lower()
+
+    #----------------------------------------------------------------------------------------------------
+    # IDINAGDAG: Palitan lahat ng jejemon letters sa normal letters
+    # Bago dumaan sa tokenization, lilinisin muna ang text mula sa jejemon
+    # Halimbawa: "phwendsz" ➡ "friends"
+    #----------------------------------------------------------------------------------------------------
+    for jej, norm in reverse_lex.items():
+        lowered = re.sub(rf"{re.escape(jej)}", norm, lowered)
+
+    #----------------------------------------------------------------------------------------------------
+    # IDINAGDAG: Ayusin ang sobrang paulit-ulit na letters
+    # Halimbawa: "heeellooo" ➡ "hello" (pinapayagan ang double letters pero hindi sobra)
+    #----------------------------------------------------------------------------------------------------
+    lowered = re.sub(r'(.)\1{2,}', r'\1\1', lowered)
+
+    return lowered
+
 
 def tokenize(text, alphabet, emoticons, special_chars): # from here...
     reverse_lex = build_reverse_lexicon(alphabet)
@@ -187,17 +194,47 @@ def tokenize(text, alphabet, emoticons, special_chars): # from here...
     #-----------------------------------------------------------------------------------------------------------------------------
 
 
+def apply_eliza_rules(words, eliza_rules): # <<<<<<< IDINAGDAG: Apply ELIZA rules
+    transformed = []
+    for word in words:
+        word_lower = word.lower()
+        found = False
+        for key, variants in eliza_rules.items():
+            if word_lower in variants:  #UPDATED: Check all variants in eliza_rules.json
+                transformed.append(key)
+                found = True
+                break
+        if not found:
+            transformed.append(word)
+    return transformed
+
+
 def token_area(text): #from here
-    alphabet, emoticons, special_chars = load_lexicons()
-    tokens = tokenize(text, alphabet, emoticons, special_chars)
+    alphabet, emoticons, special_chars, eliza_rules = load_lexicons()
+
+    #----------------------------------------------------------------------------------------------------
+    # IDINAGDAG: I-NORMALIZE ANG TEXT BAGO I-TOKENIZE
+    # Ito ay para bago pa mahati sa tokens ang input, na-convert na agad ang mga jejemon letters.
+    #----------------------------------------------------------------------------------------------------
+    normalized_text = normalize_text(text, alphabet)
+
+    tokens = tokenize(normalized_text, alphabet, emoticons, special_chars)
 
     with open("tokenized_output.json", "w", encoding="utf-8") as f:
         json.dump(tokens, f, indent=4, ensure_ascii=False)
 
     token_join = "".join(token["value"] for token in tokens if token["type"] in ["alphabet", "unknown"])
-    return token_join # to here...
+    words = token_join.split()
+
+    #----------------------------------------------------------------------------------------------------
+    # IDINAGDAG: Apply ELIZA rules to transform words into conversational replacements
+    #----------------------------------------------------------------------------------------------------
+    eliza_transformed = apply_eliza_rules(words, eliza_rules)
+    response = " ".join(eliza_transformed)
+
+    return response.capitalize() # to here...
 
 #------------------------------------------------------------------------
 # pang save lang ito sa tokenized_output.json natin, dito napupunta yung 
 # type (lexicon) and value (laman ng lexicon na analyze at nagamit)"
-# -----------------------------------------------------------------------
+#------------------------------------------------------------------------

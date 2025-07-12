@@ -288,5 +288,275 @@
     "timestamp": "2025-07-10T23:52:09.057874",
     "original": "wh0 d0 y0u think y0u 4r3 |_1k3 y0u c4r3",
     "normalized": "who do you think you are like you care"
+  },
+  {
+    "timestamp": "2025-07-11T00:20:34.507055",
+    "original": "wh0 d0 y0u th1nk y0u 4r3",
+    "normalized": "who do you think you are"
+  },
+  {
+    "timestamp": "2025-07-11T00:21:05.131128",
+    "original": "sin0 k@ s@ tingin m0 h4",
+    "normalized": "sino ka sa tingin mo ha"
+  },
+  {
+    "timestamp": "2025-07-11T23:06:47.237267",
+    "original": "helo",
+    "normalized": "helo"
+  },
+  {
+    "timestamp": "2025-07-11T23:08:52.188626",
+    "original": "hello",
+    "normalized": "hello"
+  },
+  {
+    "timestamp": "2025-07-11T23:08:54.456878",
+    "original": "helo",
+    "normalized": "helo"
+  },
+  {
+    "timestamp": "2025-07-11T23:09:11.071090",
+    "original": "hello",
+    "normalized": "hello"
+  },
+  {
+    "timestamp": "2025-07-11T23:09:14.852057",
+    "original": "helo",
+    "normalized": "helo"
+  },
+  {
+    "timestamp": "2025-07-11T23:14:34.111052",
+    "original": "helo",
+    "normalized": "alphabetalphabetalphabetalphabet"
+  },
+  {
+    "timestamp": "2025-07-11T23:15:46.463624",
+    "original": "helo",
+    "normalized": "helo"
+  },
+  {
+    "timestamp": "2025-07-11T23:16:23.032597",
+    "original": "helo",
+    "normalized": "alphabetalphabetalphabetalphabet"
+  },
+  {
+    "timestamp": "2025-07-12T08:01:59.977873",
+    "original": "M4hal kh3t4",
+    "normalized": "mahal keta"
+  },
+  {
+    "timestamp": "2025-07-12T08:02:25.386045",
+    "original": "1 L0v3 Y0U",
+    "normalized": "i love you"
+  },
+  {
+    "timestamp": "2025-07-12T08:02:38.074075",
+    "original": "gh4nd4",
+    "normalized": "ghanda"
+  },
+  {
+    "timestamp": "2025-07-12T08:03:05.566037",
+    "original": "g4nd4",
+    "normalized": "ganda"
+  },
+  {
+    "timestamp": "2025-07-12T08:03:25.377112",
+    "original": "g4nd4 n9 d4m1Ttt ko",
+    "normalized": "ganda ng damittt ko"
+  },
+  {
+    "timestamp": "2025-07-12T13:32:16.312269",
+    "original": "7hol",
+    "normalized": "thol"
+  },
+  {
+    "timestamp": "2025-07-12T13:32:32.265782",
+    "original": "wh4t",
+    "normalized": "what"
+  },
+  {
+    "timestamp": "2025-07-12T13:32:36.989875",
+    "original": "dis",
+    "normalized": "dis"
+  },
+  {
+    "timestamp": "2025-07-12T13:32:59.696104",
+    "original": "ph1$h",
+    "normalized": "fish"
+  },
+  {
+    "timestamp": "2025-07-12T13:33:14.581468",
+    "original": "4r4y ko",
+    "normalized": "aray ko"
+  },
+  {
+    "timestamp": "2025-07-12T13:33:30.241750",
+    "original": "labyu",
+    "normalized": "labyu"
+  },
+  {
+    "timestamp": "2025-07-12T13:33:37.125452",
+    "original": "m$hal",
+    "normalized": "mshal"
+  },
+  {
+    "timestamp": "2025-07-12T13:33:48.337098",
+    "original": "m4h@l",
+    "normalized": "mahal"
+  },
+  {
+    "timestamp": "2025-07-12T13:33:58.916850",
+    "original": "XD",
+    "normalized": "xd"
+  },
+  {
+    "timestamp": "2025-07-12T13:34:04.818003",
+    "original": "XD",
+    "normalized": "xd"
+  },
+  {
+    "timestamp": "2025-07-12T13:34:27.564051",
+    "original": "gudnyght \ud83d\ude2e",
+    "normalized": "gudnyght "
+  },
+  {
+    "timestamp": "2025-07-12T13:34:51.994252",
+    "original": "g00dn1ght \ud83d\ude34",
+    "normalized": "goodnight "
+  },
+  {
+    "timestamp": "2025-07-12T13:41:52.003171",
+    "original": "ice cream",
+    "normalized": "ice cream"
+  },
+  {
+    "timestamp": "2025-07-12T13:41:52.155509",
+    "original": "",
+    "normalized": ""
+  },
+  {
+    "timestamp": "2025-07-12T13:41:56.289780",
+    "original": "ice cream",
+    "normalized": "ice cream"
+  },
+  {
+    "timestamp": "2025-07-12T23:39:22.057188",
+    "original": "h3llo phwendsz",
+    "normalized": "hello fwendsz"
+  },
+  {
+    "timestamp": "2025-07-12T23:54:41.766888",
+    "original": "h3ll0 phwendsz",
+    "normalized": "hello fwendsz"
+  },
+  {
+    "timestamp": "2025-07-13T00:07:16.935664",
+    "original": "heeellllo",
+    "normalized": "helo"
+  },
+  {
+    "timestamp": "2025-07-13T00:07:32.331759",
+    "original": "helloo",
+    "normalized": "helloo"
+  },
+  {
+    "timestamp": "2025-07-13T00:16:38.063746",
+    "original": "h3ll0 phwendsz",
+    "normalized": "hello fwendsz"
+  },
+  {
+    "timestamp": "2025-07-13T00:16:46.720588",
+    "original": "helloo",
+    "normalized": "hello"
+  },
+  {
+    "timestamp": "2025-07-13T00:16:52.745653",
+    "original": "helllooo",
+    "normalized": "helloo"
+  },
+  {
+    "timestamp": "2025-07-13T00:16:57.863715",
+    "original": "helloo",
+    "normalized": "hello"
+  },
+  {
+    "timestamp": "2025-07-13T00:17:01.660615",
+    "original": "cooll",
+    "normalized": "cooll"
+  },
+  {
+    "timestamp": "2025-07-13T00:17:05.464417",
+    "original": "coool",
+    "normalized": "cool"
+  },
+  {
+    "timestamp": "2025-07-13T00:17:13.350950",
+    "original": "dolll",
+    "normalized": "doll"
+  },
+  {
+    "timestamp": "2025-07-13T00:17:30.909146",
+    "original": "carrr",
+    "normalized": "car"
+  },
+  {
+    "timestamp": "2025-07-13T00:17:40.776339",
+    "original": "hommo",
+    "normalized": "hommo"
+  },
+  {
+    "timestamp": "2025-07-13T00:17:46.330892",
+    "original": "homoo",
+    "normalized": "homoo"
+  },
+  {
+    "timestamp": "2025-07-13T00:17:50.018769",
+    "original": "helloo",
+    "normalized": "hello"
+  },
+  {
+    "timestamp": "2025-07-13T00:19:10.498421",
+    "original": "h3ll0 phwendsz",
+    "normalized": "hello fwendsz"
+  },
+  {
+    "timestamp": "2025-07-13T00:22:00.096415",
+    "original": "hellooo",
+    "normalized": "hello"
+  },
+  {
+    "timestamp": "2025-07-13T00:22:23.289975",
+    "original": "H3ll0 phwendsz",
+    "normalized": "hello fwendsz"
+  },
+  {
+    "timestamp": "2025-07-13T00:29:28.541369",
+    "original": "H3llo phwendsz i feel happy",
+    "normalized": "Hi fwendsz you think content"
+  },
+  {
+    "timestamp": "2025-07-13T00:31:41.167507",
+    "original": "h3ll0 phwendsz i feel happy",
+    "normalized": "hi fwendsz you think content"
+  },
+  {
+    "timestamp": "2025-07-13T00:34:26.676624",
+    "original": "fwendsz",
+    "normalized": "fwendsz"
+  },
+  {
+    "timestamp": "2025-07-13T00:37:47.015734",
+    "original": "phwendsz",
+    "normalized": "friend"
+  },
+  {
+    "timestamp": "2025-07-13T00:37:58.009282",
+    "original": "fwendsz",
+    "normalized": "friend"
+  },
+  {
+    "timestamp": "2025-07-13T00:40:51.636658",
+    "original": "phwendsz \ud83d\ude0e",
+    "normalized": "Friend"
   }
 ]

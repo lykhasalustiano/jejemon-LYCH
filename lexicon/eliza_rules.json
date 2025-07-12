@@ -1,0 +1,19 @@
+{
+  "i": ["i", "1", "|", "ï", "î", "me", "myself"],
+  "am": ["am", "aim", "m", "amm", "i'm", "im"],
+  "my": ["my", "mai", "mhy", "mii", "mi"],
+  "me": ["me", "mee", "mi", "meh"],
+  "you": ["you", "u", "yu", "yuh", "yuu"],
+  "your": ["your", "ur", "yor", "yours", "yurr"],
+  "friend": ["friend", "frend", "fwend", "phriend", "frnd", "phwendsz", "fwendsz"],
+  "happy": ["happy", "hapy", "hapyy", "happi", "h4ppy", "h@ppy"],
+  "sad": ["sad", "saad", "sadd", "s@d"],
+  "hello": ["hello", "helo", "helloo", "heello", "heeelloo", "hullo", "h3llo"],
+  "feel": ["feel", "f33l", "feeeel", "fiel", "ph33l"],
+  "like": ["like", "lyk", "liike", "liek", "l1ke"],
+  "love": ["love", "luv", "l0ve", "loove", "luvv", "l<3"],
+  "hate": ["hate", "haet", "h8", "haate", "hait"],
+  "content": ["content", "contnt", "kontent"],
+  "unhappy": ["unhappy", "unsad", "not happy", "sadness"],
+  "acquaintance": ["acquaintance", "friend", "fellow", "mate"]
+}

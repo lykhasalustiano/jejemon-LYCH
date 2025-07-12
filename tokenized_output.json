@@ -1,59 +1,15 @@
 [
     {
         "type": "alphabet",
+        "value": "f"
+    },
+    {
+        "type": "alphabet",
         "value": "w"
     },
     {
-        "type": "alphabet",
-        "value": "h"
-    },
-    {
-        "type": "alphabet",
-        "value": "o"
-    },
-    {
         "type": "unknown",
-        "value": " "
-    },
-    {
-        "type": "alphabet",
-        "value": "d"
-    },
-    {
-        "type": "alphabet",
-        "value": "o"
-    },
-    {
-        "type": "unknown",
-        "value": " "
-    },
-    {
-        "type": "alphabet",
-        "value": "y"
-    },
-    {
-        "type": "alphabet",
-        "value": "o"
-    },
-    {
-        "type": "alphabet",
-        "value": "u"
-    },
-    {
-        "type": "unknown",
-        "value": " "
-    },
-    {
-        "type": "alphabet",
-        "value": "t"
-    },
-    {
-        "type": "alphabet",
-        "value": "h"
-    },
-    {
-        "type": "alphabet",
-        "value": "i"
+        "value": "e"
     },
     {
         "type": "alphabet",
@@ -61,94 +17,22 @@
     },
     {
         "type": "alphabet",
-        "value": "k"
+        "value": "d"
+    },
+    {
+        "type": "alphabet",
+        "value": "s"
+    },
+    {
+        "type": "alphabet",
+        "value": "z"
     },
     {
         "type": "unknown",
         "value": " "
     },
     {
-        "type": "alphabet",
-        "value": "y"
-    },
-    {
-        "type": "alphabet",
-        "value": "o"
-    },
-    {
-        "type": "alphabet",
-        "value": "u"
-    },
-    {
-        "type": "unknown",
-        "value": " "
-    },
-    {
-        "type": "alphabet",
-        "value": "a"
-    },
-    {
-        "type": "alphabet",
-        "value": "r"
-    },
-    {
-        "type": "alphabet",
-        "value": "e"
-    },
-    {
-        "type": "unknown",
-        "value": " "
-    },
-    {
-        "type": "alphabet",
-        "value": "l"
-    },
-    {
-        "type": "alphabet",
-        "value": "i"
-    },
-    {
-        "type": "alphabet",
-        "value": "k"
-    },
-    {
-        "type": "alphabet",
-        "value": "e"
-    },
-    {
-        "type": "unknown",
-        "value": " "
-    },
-    {
-        "type": "alphabet",
-        "value": "y"
-    },
-    {
-        "type": "alphabet",
-        "value": "o"
-    },
-    {
-        "type": "alphabet",
-        "value": "u"
-    },
-    {
-        "type": "unknown",
-        "value": " "
-    },
-    {
-        "type": "alphabet",
-        "value": "c"
-    },
-    {
-        "type": "alphabet",
-        "value": "a"
-    },
-    {
-        "type": "alphabet",
-        "value": "r"
-    },
-    {
-        "type": "alphabet",
-        "value": "e"
+        "type": "emoticon",
+        "value": "😎"
     }
 ]
