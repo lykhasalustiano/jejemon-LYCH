@@ -1,11 +1,11 @@
 [
     {
         "type": "alphabet",
-        "value": "f"
+        "value": "h"
     },
     {
         "type": "alphabet",
-        "value": "w"
+        "value": "h"
     },
     {
         "type": "unknown",
@@ -13,26 +13,18 @@
     },
     {
         "type": "alphabet",
-        "value": "n"
+        "value": "l"
     },
     {
         "type": "alphabet",
-        "value": "d"
+        "value": "l"
     },
     {
         "type": "alphabet",
-        "value": "s"
+        "value": "o"
     },
     {
         "type": "alphabet",
-        "value": "z"
-    },
-    {
-        "type": "unknown",
-        "value": " "
-    },
-    {
-        "type": "emoticon",
-        "value": "😎"
+        "value": "o"
     }
 ]
