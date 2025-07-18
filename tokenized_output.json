@@ -1,22 +1,18 @@
 [
     {
-        "type": "emoticon",
-        "value": "❤️"
-    },
-    {
         "type": "unknown",
-        "value": " "
+        "value": "a"
     },
     {
-        "type": "emoticon",
-        "value": "❤️"
+        "type": "alphabet",
+        "value": "n"
     },
     {
-        "type": "unknown",
-        "value": " "
+        "type": "alphabet",
+        "value": "o"
     },
     {
-        "type": "emoticon",
-        "value": "❤️"
+        "type": "special_char",
+        "value": "?"
     }
 ]

@@ -987,7 +987,7 @@
   {
     "timestamp": "2025-07-18T09:38:04.959112",
     "original": "h1 :)",
-    "normalized": "Hi \ud83d\ude0a"
+    "normalized": "HHHHHHHH3ll0oooooo"
   },
   {
     "timestamp": "2025-07-18T09:38:18.459039",
@@ -1378,5 +1378,325 @@
     "timestamp": "2025-07-18T11:09:14.875540",
     "original": "<3 <3 <3",
     "normalized": "\u2764\ufe0f \u2764\ufe0f \u2764\ufe0f"
+  },
+  {
+    "timestamp": "2025-07-18T12:11:42.630760",
+    "original": "@no?",
+    "normalized": "Ano?"
+  },
+  {
+    "timestamp": "2025-07-18T12:11:56.574482",
+    "original": "H3LLOOOOO",
+    "normalized": "H3llooooo"
+  },
+  {
+    "timestamp": "2025-07-18T12:16:12.448435",
+    "original": "HELLOOO",
+    "normalized": "Hello"
+  },
+  {
+    "timestamp": "2025-07-18T12:16:17.544669",
+    "original": "HEEELLOL",
+    "normalized": "Hello"
+  },
+  {
+    "timestamp": "2025-07-18T12:16:23.669259",
+    "original": "@no?",
+    "normalized": "Ano?"
+  },
+  {
+    "timestamp": "2025-07-18T12:16:35.928675",
+    "original": "yesssssssssssss",
+    "normalized": "Yes"
+  },
+  {
+    "timestamp": "2025-07-18T12:16:39.177941",
+    "original": "yas",
+    "normalized": "Yas"
+  },
+  {
+    "timestamp": "2025-07-18T12:17:05.208185",
+    "original": "yazz",
+    "normalized": "Yes"
+  },
+  {
+    "timestamp": "2025-07-18T12:17:10.507233",
+    "original": "ayem",
+    "normalized": "I am"
+  },
+  {
+    "timestamp": "2025-07-18T12:18:20.485512",
+    "original": "Ar3 y0u aydunno, maybe prend",
+    "normalized": "Ar3 you ayduno, maybe prend"
+  },
+  {
+    "timestamp": "2025-07-18T12:20:34.371974",
+    "original": "are you ok \ud83d\ude3a",
+    "normalized": "Are you ok \ud83d\ude3a"
+  },
+  {
+    "timestamp": "2025-07-18T12:20:47.076207",
+    "original": "4r3 y0u 0k \ud83d\ude3a",
+    "normalized": "Ar3 you ok \ud83d\ude3a"
+  },
+  {
+    "timestamp": "2025-07-18T12:21:27.442458",
+    "original": "Ar3 y0u aydunno, maybe prend",
+    "normalized": "Ar3 you ayduno, maybe prend"
+  },
+  {
+    "timestamp": "2025-07-18T12:26:47.805708",
+    "original": "eowz",
+    "normalized": "Hello"
+  },
+  {
+    "timestamp": "2025-07-18T12:28:16.831448",
+    "original": "eown \ud83d\ude3a",
+    "normalized": "Eown \ud83d\ude3a"
+  },
+  {
+    "timestamp": "2025-07-18T12:29:18.335194",
+    "original": "Ar3 you ayduno, maybe prend",
+    "normalized": "Ar3 you ayduno, maybe prend"
+  },
+  {
+    "timestamp": "2025-07-18T12:29:41.959653",
+    "original": "eown",
+    "normalized": "Hello"
+  },
+  {
+    "timestamp": "2025-07-18T12:29:47.537654",
+    "original": "eowz\ud83d\ude3a",
+    "normalized": "Hello"
+  },
+  {
+    "timestamp": "2025-07-18T12:30:17.101314",
+    "original": "Ar3 you ayduno, maybe prend",
+    "normalized": "Ar3 you ayduno, maybe prend"
+  },
+  {
+    "timestamp": "2025-07-18T12:41:31.268378",
+    "original": "ngekz, 3di 1kaw na m@galin",
+    "normalized": "Oh no, 3di ikaw na magalin"
+  },
+  {
+    "timestamp": "2025-07-18T12:41:48.874597",
+    "original": "w@la k4n9 m@gAg4wa labq s1y@!1",
+    "normalized": "Wala kang magagawa labq siya!i"
+  },
+  {
+    "timestamp": "2025-07-18T12:41:54.535458",
+    "original": "w@la k4n9 m@gAg4wa labq s1y@",
+    "normalized": "Wala kang magagawa labq siya"
+  },
+  {
+    "timestamp": "2025-07-18T12:42:10.357088",
+    "original": "w@la k4n9 m@gAg4wa labq s1y@",
+    "normalized": "Wala kang magagawa labq siya"
+  },
+  {
+    "timestamp": "2025-07-18T12:42:26.258317",
+    "original": "w@999999999999999999",
+    "normalized": "Wag"
+  },
+  {
+    "timestamp": "2025-07-18T12:42:37.556811",
+    "original": "Anoi",
+    "normalized": "Ano"
+  },
+  {
+    "timestamp": "2025-07-18T12:42:46.255325",
+    "original": "Anoi!",
+    "normalized": "Ano!"
+  },
+  {
+    "timestamp": "2025-07-18T12:42:56.102859",
+    "original": "b@k1t?",
+    "normalized": "Bakit?"
+  },
+  {
+    "timestamp": "2025-07-18T12:43:03.165476",
+    "original": "500",
+    "normalized": "So"
+  },
+  {
+    "timestamp": "2025-07-18T12:43:23.569610",
+    "original": "3d1 w0w",
+    "normalized": "3di wow"
+  },
+  {
+    "timestamp": "2025-07-18T12:43:34.311430",
+    "original": "3d1 w0W",
+    "normalized": "3di wow"
+  },
+  {
+    "timestamp": "2025-07-18T12:43:50.445256",
+    "original": "HHHHHHHH3ll0oooooo",
+    "normalized": "H3lo"
+  },
+  {
+    "timestamp": "2025-07-18T12:44:06.028380",
+    "original": "HHHHHHHH3ll0oooooo",
+    "normalized": "H3lo"
+  },
+  {
+    "timestamp": "2025-07-18T12:44:14.129909",
+    "original": "h@?!",
+    "normalized": "Ha?!"
+  },
+  {
+    "timestamp": "2025-07-18T12:44:24.558040",
+    "original": "b@k1T k4 9aLiT?! :(\"",
+    "normalized": "Bakit ka galit?! \ud83d\ude14\""
+  },
+  {
+    "timestamp": "2025-07-18T12:44:54.652391",
+    "original": "H3Llloooo Prend",
+    "normalized": "H3lo prend"
+  },
+  {
+    "timestamp": "2025-07-18T12:45:01.595834",
+    "original": "H3lloooo Prend",
+    "normalized": "H3lo prend"
+  },
+  {
+    "timestamp": "2025-07-18T12:45:20.373762",
+    "original": "eowzzz powhz K@must4 k@? :*",
+    "normalized": "Eowz powhz kamusta ka? \ud83d\ude18"
+  },
+  {
+    "timestamp": "2025-07-18T12:45:52.803621",
+    "original": "T_t",
+    "normalized": "T_t"
+  },
+  {
+    "timestamp": "2025-07-18T12:46:01.757139",
+    "original": ":'')",
+    "normalized": "\ud83e\udd23"
+  },
+  {
+    "timestamp": "2025-07-18T12:46:10.415685",
+    "original": ">_<",
+    "normalized": "\ud83d\ude23"
+  },
+  {
+    "timestamp": "2025-07-18T12:47:14.788687",
+    "original": ">_<",
+    "normalized": "\ud83d\ude23"
+  },
+  {
+    "timestamp": "2025-07-18T12:47:21.605754",
+    "original": "helllloo",
+    "normalized": "Hello"
+  },
+  {
+    "timestamp": "2025-07-18T12:47:45.303835",
+    "original": "eowzzz powhz K@must4 k@? :",
+    "normalized": "Eowz powhz kamusta ka? :"
+  },
+  {
+    "timestamp": "2025-07-18T12:48:03.891755",
+    "original": "eowzzz powhz K@must4 k@? :",
+    "normalized": "Hello po kamusta ka? :"
+  },
+  {
+    "timestamp": "2025-07-18T12:48:21.852198",
+    "original": "eowzzz powhz K@must4 k@? >_<",
+    "normalized": "Hello po kamusta ka? \ud83d\ude23"
+  },
+  {
+    "timestamp": "2025-07-18T12:48:55.101518",
+    "original": "helllooo  powhz K@must4 k@? >_<",
+    "normalized": "Helo po kamusta ka? \ud83d\ude23"
+  },
+  {
+    "timestamp": "2025-07-18T12:49:07.051625",
+    "original": "hellooo powhz K@must4 k@? >_<",
+    "normalized": "Helo po kamusta ka? \ud83d\ude23"
+  },
+  {
+    "timestamp": "2025-07-18T12:49:51.829810",
+    "original": "@NO?",
+    "normalized": "Ano?"
+  },
+  {
+    "timestamp": "2025-07-18T12:52:17.004040",
+    "original": "hellooo powhz K@must4 k@? >_<",
+    "normalized": "Helloo po kamusta ka? \ud83d\ude23"
+  },
+  {
+    "timestamp": "2025-07-18T12:52:25.992636",
+    "original": "hellooo powhz K@must4 k@? >_<",
+    "normalized": "Helloo po kamusta ka? \ud83d\ude23"
+  },
+  {
+    "timestamp": "2025-07-18T12:52:35.008305",
+    "original": "@NO?",
+    "normalized": "Ano?"
+  },
+  {
+    "timestamp": "2025-07-18T12:52:51.571712",
+    "original": "HELLOO",
+    "normalized": "Helloo"
+  },
+  {
+    "timestamp": "2025-07-18T12:55:01.954171",
+    "original": "HELLOO",
+    "normalized": "Helloo"
+  },
+  {
+    "timestamp": "2025-07-18T12:55:42.441172",
+    "original": "HELLOO",
+    "normalized": "Helo"
+  },
+  {
+    "timestamp": "2025-07-18T12:55:45.147218",
+    "original": "@NO?",
+    "normalized": "Ano?"
+  },
+  {
+    "timestamp": "2025-07-18T12:55:47.919193",
+    "original": "hellooo powhz K@must4 k@? >_<",
+    "normalized": "Helo po kamusta ka? \ud83d\ude23"
+  },
+  {
+    "timestamp": "2025-07-18T12:55:52.475557",
+    "original": "eowzzz powhz K@must4 k@? >_<",
+    "normalized": "Hello po kamusta ka? \ud83d\ude23"
+  },
+  {
+    "timestamp": "2025-07-18T13:00:29.796012",
+    "original": "eowzzz powhz K@must4 k@? >_<",
+    "normalized": "Hello po kamusta ka? \ud83d\ude23"
+  },
+  {
+    "timestamp": "2025-07-18T13:00:33.012400",
+    "original": "hellooo powhz K@must4 k@? >_<",
+    "normalized": "Helo po kamusta ka? \ud83d\ude23"
+  },
+  {
+    "timestamp": "2025-07-18T13:01:07.961242",
+    "original": "HELLOO",
+    "normalized": "Helo"
+  },
+  {
+    "timestamp": "2025-07-18T13:02:48.348502",
+    "original": "HELLOO",
+    "normalized": "Helo"
+  },
+  {
+    "timestamp": "2025-07-18T13:02:56.973484",
+    "original": "hellooo powhz K@must4 k@? >_<",
+    "normalized": "Helo po kamusta ka? \ud83d\ude23"
+  },
+  {
+    "timestamp": "2025-07-18T13:02:58.755374",
+    "original": "eowzzz powhz K@must4 k@? >_<",
+    "normalized": "Hello po kamusta ka? \ud83d\ude23"
+  },
+  {
+    "timestamp": "2025-07-18T13:03:03.879125",
+    "original": "@NO?",
+    "normalized": "Ano?"
   }
 ]

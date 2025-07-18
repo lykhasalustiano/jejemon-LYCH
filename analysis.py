@@ -66,12 +66,21 @@ def build_reverse_lexicon(alphabet):
             reverse[v.lower()] = normal
     return reverse
 
+def normalize_word(word):
+    if not word:
+        return word
+    
+    word_lower = word.lower()
+    clean_word = re.sub(r'(.)\1+', r'\1', word_lower) 
+    return clean_word
+
 def normalize_text(text, alphabet):
     reverse_lex = build_reverse_lexicon(alphabet)
     lowered = text.lower()
     for jej, norm in reverse_lex.items():
         lowered = re.sub(rf"{re.escape(jej)}", norm, lowered)
-    lowered = re.sub(r'(.)\1+', r'\1', lowered)  # compress repeated chars
+    
+    lowered = re.sub(r'(.)\1+', r'\1', lowered)  
     return lowered
 
 def tokenize(text, alphabet, emoticons, special_chars):
@@ -91,11 +100,13 @@ def tokenize(text, alphabet, emoticons, special_chars):
         for length in range(max_len, 0, -1):
             if i + length <= len(text):
                 chunk = text[i:i+length].lower()
+                
+                clean_chunk = re.sub(r'(.)\1+', r'\1', chunk)
 
-                if chunk in reverse_lex:
+                if clean_chunk in reverse_lex:
                     tokens.append({
                         "type": "alphabet",
-                        "value": reverse_lex[chunk]
+                        "value": reverse_lex[clean_chunk]
                     })
                     i += length
                     found = True
@@ -179,6 +190,8 @@ def token_area(text):
             punct = word[-1]
             word = word[:-1]
 
+        word = normalize_word(word)
+
         transformed = None
         for key, variants in jejemon.items():
             if word.lower() in variants:
@@ -194,7 +207,7 @@ def token_area(text):
     return response.capitalize()
 
 #---------------------------------------------------------------------------------
-#1 FIX NA DOUBLE CHECK MO NA LANG
+#1 FIX NA DOUBLE CHECK MO NA LANG(ETO NALANG HINDI KO MA FIX)
 # need pa ifix yung sa multiple character kapag marami inenter si user na character 
 # dapat ang maging output ay yung normal text nung ininput ni user example
 # user: h3Ll0ooOooooo
@@ -204,7 +217,7 @@ def token_area(text):
 #-----------------------------------------------------------------------------
 
 #------------------------------------------------------------------------------------
-#2 FIX NA DOUBLE CHECK MO NA LANG
+#2 FIX NA DOUBLE CHECK MO NA LANG(DONE)
 # next don yung special character need din ifix if hindi naman need inormamlize 
 # dapat sa output nandon pa rin siya pero kung need inormalize kailangan wala 
 # siya sa output kung ginamit siya as a jejemon text.
@@ -216,12 +229,12 @@ def token_area(text):
 #---------------------------------------------------------------------------------------
 
 #-------------------------------------------------------------------------------------------
-#3 FIX NA DOUBLE CHECK MO NA LANG
+#3 FIX NA DOUBLE CHECK MO NA LANG(DONE)
 # lastly yung emoticons pag chineck mo yung emoticons.json natin 
 # makikita mo may mga ganito " :), :(, :P, at iba pa" tapos may equivalent siyang emoji
 # parang ganito: ":)": "😊"
 # problem? hindi pa siya na nonormalized sa ngayon ang nagiging output ay ganito
 # user input: :) output: 
 # wala siyang output pero dapat ganito
-# user input: s0br@n9 s4Y@ k0! :) output: Sobrang saya ko! 😊
+# user input: s0br@n9 s4Y@ k0! :) output: Sobrang saya ko! 😊  
 #--------------------------------------------------------------------------------------------
