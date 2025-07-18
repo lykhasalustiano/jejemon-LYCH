@@ -1698,5 +1698,335 @@
     "timestamp": "2025-07-18T13:03:03.879125",
     "original": "@NO?",
     "normalized": "Ano?"
+  },
+  {
+    "timestamp": "2025-07-18T16:43:58.655339",
+    "original": "H3ll0oo",
+    "normalized": "H3lo"
+  },
+  {
+    "timestamp": "2025-07-18T16:44:57.171233",
+    "original": ":)",
+    "normalized": "\ud83d\ude0a"
+  },
+  {
+    "timestamp": "2025-07-18T16:45:17.097849",
+    "original": "H3ll0oooo",
+    "normalized": "Helo"
+  },
+  {
+    "timestamp": "2025-07-18T16:46:01.050420",
+    "original": "Hell0ooooo_o",
+    "normalized": "Hel\ud83d\udc40"
+  },
+  {
+    "timestamp": "2025-07-18T16:46:36.083900",
+    "original": "Hell0oooo o_o",
+    "normalized": "Helo \ud83d\udc40"
+  },
+  {
+    "timestamp": "2025-07-18T16:46:46.748527",
+    "original": "oewzo_o",
+    "normalized": "Oewz\ud83d\udc40"
+  },
+  {
+    "timestamp": "2025-07-18T16:47:42.150071",
+    "original": "oewz 0_0",
+    "normalized": "Oewz \ud83d\udc40"
+  },
+  {
+    "timestamp": "2025-07-18T16:47:54.242796",
+    "original": "eowzo_o",
+    "normalized": "Eowz\ud83d\udc40"
+  },
+  {
+    "timestamp": "2025-07-18T16:48:02.494171",
+    "original": "eowz",
+    "normalized": "Hello"
+  },
+  {
+    "timestamp": "2025-07-18T16:48:30.775144",
+    "original": "eowz0_0",
+    "normalized": "Eowz\ud83d\udc40"
+  },
+  {
+    "timestamp": "2025-07-18T16:48:51.683494",
+    "original": "eowz:)",
+    "normalized": "Eowz\ud83d\ude0a"
+  },
+  {
+    "timestamp": "2025-07-18T16:49:05.908831",
+    "original": "eowz!",
+    "normalized": "Hello!"
+  },
+  {
+    "timestamp": "2025-07-18T16:52:24.709196",
+    "original": "h3Ll0 powhz :) tayred n@ 4K0 hangree p@",
+    "normalized": "Helo po \ud83d\ude0a tired na ako hungry pa"
+  },
+  {
+    "timestamp": "2025-07-18T16:53:00.724048",
+    "original": "helow  powhz :) tayred n@ 4K0 hangree p@",
+    "normalized": "Hello po \ud83d\ude0a tired na ako hungry pa"
+  },
+  {
+    "timestamp": "2025-07-18T16:53:24.385777",
+    "original": "helow  powhz:) tayred n@ 4K0 hangree p@",
+    "normalized": "Hello po tired na ako hungry pa"
+  },
+  {
+    "timestamp": "2025-07-18T16:55:01.260055",
+    "original": "B4k1t k@ 9AliT?!",
+    "normalized": "Bakit ka galit?!"
+  },
+  {
+    "timestamp": "2025-07-18T16:59:29.586541",
+    "original": "k@musT4 ka?",
+    "normalized": "Kamusta ka?"
+  },
+  {
+    "timestamp": "2025-07-18T17:10:17.715770",
+    "original": "eOw pOhwZz! kAmUzHtA nAuh? </3",
+    "normalized": "Eow pohwz! kamusta na you? </e"
+  },
+  {
+    "timestamp": "2025-07-18T17:11:30.530601",
+    "original": "eOw pOwhZz! kAmUzHtA nAuh?",
+    "normalized": "Hello po! kamusta na you?"
+  },
+  {
+    "timestamp": "2025-07-18T17:14:51.009712",
+    "original": "eOw pOwhZz! kAmUzHtA nAuh? \u2764\ufe0f",
+    "normalized": "Hello po! kamusta na you? \u2764\ufe0f"
+  },
+  {
+    "timestamp": "2025-07-18T17:20:50.552101",
+    "original": "eOw pOhwZz! kAmUzHtA nAuh? :)",
+    "normalized": "Hello pohwz! kamusta na you? \ud83d\ude0a"
+  },
+  {
+    "timestamp": "2025-07-18T17:21:30.986771",
+    "original": "eOw pOhwZz! kAmUzHtA nAuh? :)",
+    "normalized": "Hello po! kamusta na you? \ud83d\ude0a"
+  },
+  {
+    "timestamp": "2025-07-18T17:22:36.989485",
+    "original": "eowz0_0",
+    "normalized": "Eowz\ud83d\udc40"
+  },
+  {
+    "timestamp": "2025-07-18T17:35:01.340272",
+    "original": "Lov",
+    "normalized": "Lov"
+  },
+  {
+    "timestamp": "2025-07-18T17:37:28.191925",
+    "original": "1 L0v uh",
+    "normalized": "I lov u"
+  },
+  {
+    "timestamp": "2025-07-18T17:37:53.158933",
+    "original": "L0v",
+    "normalized": "Love"
+  },
+  {
+    "timestamp": "2025-07-18T17:38:12.211677",
+    "original": "1 L0ov yu0",
+    "normalized": "I lov yuo"
+  },
+  {
+    "timestamp": "2025-07-18T17:38:26.881449",
+    "original": "1 L0v",
+    "normalized": "I lov"
+  },
+  {
+    "timestamp": "2025-07-18T17:38:34.596556",
+    "original": "l0v you",
+    "normalized": "Lov you"
+  },
+  {
+    "timestamp": "2025-07-18T17:38:50.244399",
+    "original": "L0v3",
+    "normalized": "Love"
+  },
+  {
+    "timestamp": "2025-07-18T17:39:15.157062",
+    "original": "1 lab YoU",
+    "normalized": "I love you"
+  },
+  {
+    "timestamp": "2025-07-18T17:41:15.595359",
+    "original": "1 lab uh",
+    "normalized": "I love you"
+  },
+  {
+    "timestamp": "2025-07-18T17:41:52.734072",
+    "original": "",
+    "normalized": ""
+  },
+  {
+    "timestamp": "2025-07-18T17:46:03.034171",
+    "original": "cAn i LoV uH? wLa nA kc aK0ng iBa pAng gUs2h",
+    "normalized": "Can i lov you? wala na kasi akong iba pang gusto"
+  },
+  {
+    "timestamp": "2025-07-18T17:46:36.497643",
+    "original": "cAn i LuV uH? wLa nA kc aK0ng iBa pAng gUs2h",
+    "normalized": "Can i love you? wala na kasi akong iba pang gusto"
+  },
+  {
+    "timestamp": "2025-07-18T17:47:22.220386",
+    "original": "gUdzNyTzz swEetDrEaMz mUhAhZzz! \u2764\ufe0f",
+    "normalized": "Goodnight sweetdreams muhahz! \u2764\ufe0f"
+  },
+  {
+    "timestamp": "2025-07-18T17:47:58.843499",
+    "original": "mUhAhZzz",
+    "normalized": "Mwa"
+  },
+  {
+    "timestamp": "2025-07-18T17:48:53.937113",
+    "original": "",
+    "normalized": ""
+  },
+  {
+    "timestamp": "2025-07-18T17:49:20.539686",
+    "original": "gudzgUdzNyTzz swEetDrEaMz mUhAhZzz!",
+    "normalized": "Gudzgudznytz sweetdreams muhahz!"
+  },
+  {
+    "timestamp": "2025-07-18T17:49:52.027275",
+    "original": "gUdzNyTzz swEetDrEaMz mUhAhZzz!",
+    "normalized": "Goodnight sweetdreams muhahz!"
+  },
+  {
+    "timestamp": "2025-07-18T17:50:01.016713",
+    "original": "gUdzNyTzz swEetDrEaMz mUhAhZzz !",
+    "normalized": "Goodnight sweetdreams muhahz !"
+  },
+  {
+    "timestamp": "2025-07-18T17:50:41.682161",
+    "original": "gUdzNyTzz swEetDrEaMz mwAphz!",
+    "normalized": "Goodnight sweetdreams mwafz!"
+  },
+  {
+    "timestamp": "2025-07-18T17:50:51.608072",
+    "original": "mwaphz",
+    "normalized": "Mwa"
+  },
+  {
+    "timestamp": "2025-07-18T17:51:31.009758",
+    "original": "gUdzNyTzz swEetDrEaMz mwaphz!",
+    "normalized": "Goodnight sweetdreams mwa!"
+  },
+  {
+    "timestamp": "2025-07-18T17:52:18.299975",
+    "original": "czige",
+    "normalized": "Cige"
+  },
+  {
+    "timestamp": "2025-07-18T17:52:30.043511",
+    "original": "czat",
+    "normalized": "Cat"
+  },
+  {
+    "timestamp": "2025-07-18T17:53:38.540466",
+    "original": "eOw pOhwZz! kAmUzHtA nAuh? \ud83d\ude0a",
+    "normalized": "Hello po! kamusta na you? \ud83d\ude0a"
+  },
+  {
+    "timestamp": "2025-07-18T17:54:13.854348",
+    "original": "gUdzNyTzz swEetDrEaMz mwaphz! \u2764\ufe0f",
+    "normalized": "Goodnight sweetdreams mwa! \u2764\ufe0f"
+  },
+  {
+    "timestamp": "2025-07-18T17:55:35.387018",
+    "original": ":)",
+    "normalized": "\ud83d\ude0a"
+  },
+  {
+    "timestamp": "2025-07-18T17:56:31.819963",
+    "original": "<3",
+    "normalized": "\u2764\ufe0f"
+  },
+  {
+    "timestamp": "2025-07-18T17:56:43.496599",
+    "original": "<#",
+    "normalized": "<#"
+  },
+  {
+    "timestamp": "2025-07-18T17:56:45.883558",
+    "original": "<3",
+    "normalized": "<e"
+  },
+  {
+    "timestamp": "2025-07-18T17:56:58.984228",
+    "original": "dh1w@g",
+    "normalized": "Diwag"
+  },
+  {
+    "timestamp": "2025-07-18T17:59:22.626358",
+    "original": ":D",
+    "normalized": ":d"
+  },
+  {
+    "timestamp": "2025-07-18T17:59:46.291663",
+    "original": ":-D",
+    "normalized": ":-d"
+  },
+  {
+    "timestamp": "2025-07-18T18:01:18.153375",
+    "original": ":-D",
+    "normalized": ":-d"
+  },
+  {
+    "timestamp": "2025-07-18T18:01:39.591490",
+    "original": "3d1 w0w",
+    "normalized": "3di wow"
+  },
+  {
+    "timestamp": "2025-07-18T18:01:53.708517",
+    "original": "ed1 w0wWww",
+    "normalized": "Edi wow"
+  },
+  {
+    "timestamp": "2025-07-18T18:06:19.644964",
+    "original": "eow p0",
+    "normalized": "Hello po"
+  },
+  {
+    "timestamp": "2025-07-18T18:09:47.283384",
+    "original": "HeLl0o",
+    "normalized": "Helo"
+  },
+  {
+    "timestamp": "2025-07-18T18:10:34.687688",
+    "original": "eowz p0",
+    "normalized": "Hello po"
+  },
+  {
+    "timestamp": "2025-07-18T18:12:37.831464",
+    "original": "eowz p0",
+    "normalized": "Hello po"
+  },
+  {
+    "timestamp": "2025-07-18T18:14:35.311651",
+    "original": "eowz po",
+    "normalized": "Hello po"
+  },
+  {
+    "timestamp": "2025-07-18T18:14:45.844580",
+    "original": "prend",
+    "normalized": "Friend"
+  },
+  {
+    "timestamp": "2025-07-18T18:17:34.344208",
+    "original": "eow",
+    "normalized": "Hello"
+  },
+  {
+    "timestamp": "2025-07-18T18:17:58.978101",
+    "original": "eOw pOhwZz! kAmUzHtA nAuh? \ud83d\ude0a",
+    "normalized": "Hello po! kamusta na you? \ud83d\ude0a"
   }
 ]

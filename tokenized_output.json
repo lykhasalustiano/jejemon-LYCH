@@ -1,18 +1,110 @@
 [
     {
-        "type": "unknown",
-        "value": "a"
-    },
-    {
         "type": "alphabet",
-        "value": "n"
+        "value": "e"
     },
     {
         "type": "alphabet",
         "value": "o"
     },
     {
+        "type": "alphabet",
+        "value": "w"
+    },
+    {
+        "type": "unknown",
+        "value": " "
+    },
+    {
+        "type": "alphabet",
+        "value": "p"
+    },
+    {
+        "type": "alphabet",
+        "value": "o"
+    },
+    {
+        "type": "alphabet",
+        "value": "h"
+    },
+    {
+        "type": "alphabet",
+        "value": "w"
+    },
+    {
+        "type": "alphabet",
+        "value": "z"
+    },
+    {
+        "type": "special_char",
+        "value": "!"
+    },
+    {
+        "type": "unknown",
+        "value": " "
+    },
+    {
+        "type": "alphabet",
+        "value": "k"
+    },
+    {
+        "type": "unknown",
+        "value": "a"
+    },
+    {
+        "type": "alphabet",
+        "value": "m"
+    },
+    {
+        "type": "alphabet",
+        "value": "u"
+    },
+    {
+        "type": "alphabet",
+        "value": "z"
+    },
+    {
+        "type": "alphabet",
+        "value": "h"
+    },
+    {
+        "type": "alphabet",
+        "value": "t"
+    },
+    {
+        "type": "unknown",
+        "value": "a"
+    },
+    {
+        "type": "unknown",
+        "value": " "
+    },
+    {
+        "type": "alphabet",
+        "value": "n"
+    },
+    {
+        "type": "unknown",
+        "value": "a"
+    },
+    {
+        "type": "alphabet",
+        "value": "u"
+    },
+    {
+        "type": "alphabet",
+        "value": "h"
+    },
+    {
         "type": "special_char",
         "value": "?"
+    },
+    {
+        "type": "unknown",
+        "value": " "
+    },
+    {
+        "type": "unknown",
+        "value": "😊"
     }
 ]

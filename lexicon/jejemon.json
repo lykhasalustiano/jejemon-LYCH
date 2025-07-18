@@ -19,6 +19,7 @@
   "where ka na": ["werkana", "werkanah", "werkn4"],
   "nasaan ka": ["asaneka", "aznka", "asankah"],
   "pagod na pagod": ["haggardz", "hagardz", "haggarzz"],
+  "na you": ["nAuh"],
   "i don't know": ["aydunno", "aydunnoh", "idknoh"],
   "i can't": ["aykent", "ikent", "icanttt"],
   "wait lang": ["weytlang", "weytlang", "we8lang"],
@@ -47,13 +48,21 @@
   "tired": ["tayred", "tayrdd", "t1redz"],
   "wait": ["weyt", "w8", "wayt"],
   "later": ["leyter", "laytur", "l8tr"],
-  "po": ["ph0wh", "powhz", "pohh"],
+  "po": ["ph0wh", "powhz", "pohh", "pohwz"],
   "ano": ["anu", "anoh", "anuzz"],
   "naman": ["nmn", "nuhmen", "namhenz"],
-  "hello": ["helow", "heylow", "eowz"],
+  "hello": ["helow", "heylow", "eowz", "eow"],
   "girl": ["gerlz", "gel", "gurlz", "ghurl", "gehrl"],
   "well": ["welz", "wH3lzz"],
-  "crush": ["kRuSh", "kR4sh", "kRoShzz"]
-
+  "crush": ["kRuSh", "kR4sh", "kRoShzz"],
+  "kamusta": ["KHamuzta", "kmuxtah", "Kamuztah", "kAmUzHtA"],
+  "goodnight": ["gUdzNyTzz", "gudnytz", "nytzz"],
+  "sweetdreams": ["swEetDrEaMz", "$wEetDremhz"],
+  "mwa": ["mwaphz"], 
+  "love": ["lab", "luv"], 
+  "you": ["uh", "yowhz"],
+  "kasi": ["kz", "kc"],
+  "gusto": ["gUs2h", "gozth0", "guzToeh"], 
+  "wala": ["wla", "waley", "wAlehY"]
 }
 
