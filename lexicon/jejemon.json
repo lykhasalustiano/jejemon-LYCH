@@ -27,10 +27,9 @@
   "friend": ["prend", "fren", "pwen"],
   "okay": ["okie", "okei", "okezz"],
   "thank you": ["tenkyu", "tengkyu", "ty"],
-  "please": ["plzzz", "ples", "plx"],
-  "sorry": ["sowee", "sowri", "soriiee"],
+  "please": ["plz", "ples", "plx"],
+  "sorry": ["sowie", "sowri", "soriiee", "sowrie"],
   "welcome": ["welkam", "welkum", "weLcz"],
-  "hello": ["hellow", "helowz", "hellozz"],
   "bye": ["bayee", "baii", "buhbye"],
   "no problem": ["np", "nohprub", "noprublemz"],
   "see you": ["cyah", "ciyah", "cyaaa"],
@@ -47,5 +46,14 @@
   "sleepy": ["slipz", "slippy", "sl33py"],
   "tired": ["tayred", "tayrdd", "t1redz"],
   "wait": ["weyt", "w8", "wayt"],
-  "later": ["leyter", "laytur", "l8tr"]
+  "later": ["leyter", "laytur", "l8tr"],
+  "po": ["ph0wh", "powhz", "pohh"],
+  "ano": ["anu", "anoh", "anuzz"],
+  "naman": ["nmn", "nuhmen", "namhenz"],
+  "hello": ["helow", "heylow", "eowz"],
+  "girl": ["gerlz", "gel", "gurlz", "ghurl", "gehrl"],
+  "well": ["welz", "wH3lzz"],
+  "crush": ["kRuSh", "kR4sh", "kRoShzz"]
+
 }
+

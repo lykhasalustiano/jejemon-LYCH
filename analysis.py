@@ -1,5 +1,6 @@
 import json
 import re
+import string
 
 def validate_text(text):
     return bool(re.match(r'^[\w\s~!@#$%^&*()_+=\-\[\]{}|\\:;"\',.?/]*$', text))
@@ -28,7 +29,6 @@ def levenshtein_ratio(s1, s2):
 
 def correct_typo(token, lexicon):
     lowered = token.lower()
-
     for key, variants in lexicon.items():
         if lowered in variants:
             return key
@@ -40,7 +40,6 @@ def correct_typo(token, lexicon):
             similarities.append((key, ratio))
 
     best_match = max(similarities, key=lambda x: x[1])
-
     if best_match[1] > 60:
         return best_match[0]
     return token
@@ -70,11 +69,9 @@ def build_reverse_lexicon(alphabet):
 def normalize_text(text, alphabet):
     reverse_lex = build_reverse_lexicon(alphabet)
     lowered = text.lower()
-
     for jej, norm in reverse_lex.items():
         lowered = re.sub(rf"{re.escape(jej)}", norm, lowered)
-
-    lowered = re.sub(r'(.)\1{2,}', r'\1\1', lowered)
+    lowered = re.sub(r'(.)\1+', r'\1', lowered)  # compress repeated chars
     return lowered
 
 def tokenize(text, alphabet, emoticons, special_chars):
@@ -84,16 +81,29 @@ def tokenize(text, alphabet, emoticons, special_chars):
     i = 0
     tokens = []
 
+    max_len = max(
+        max((len(k) for k in reverse_lex), default=0),
+        max((len(k) for k in emoticons), default=0)
+    )
+
     while i < len(text):
         found = False
+        for length in range(max_len, 0, -1):
+            if i + length <= len(text):
+                chunk = text[i:i+length].lower()
 
-        for length in [3, 2, 1]:
-            if i + length <= len(lowered):
-                chunk = lowered[i:i+length]
                 if chunk in reverse_lex:
                     tokens.append({
                         "type": "alphabet",
                         "value": reverse_lex[chunk]
+                    })
+                    i += length
+                    found = True
+                    break
+                elif chunk in emoticons:
+                    tokens.append({
+                        "type": "emoticon",
+                        "value": emoticons[chunk]
                     })
                     i += length
                     found = True
@@ -104,11 +114,6 @@ def tokenize(text, alphabet, emoticons, special_chars):
             if char in special_chars:
                 tokens.append({
                     "type": "special_char",
-                    "value": char
-                })
-            elif any(char in values for values in emoticons.values()):
-                tokens.append({
-                    "type": "emoticon",
                     "value": char
                 })
             else:
@@ -163,22 +168,43 @@ def token_area(text):
     with open("tokenized_output.json", "w", encoding="utf-8") as f:
         json.dump(tokens, f, indent=4, ensure_ascii=False)
 
-    token_join = "".join(token["value"] for token in tokens if token["type"] in ["alphabet", "unknown"])
+    token_join = "".join(token["value"] for token in tokens if token["type"] in ["alphabet", "unknown", "special_char", "emoticon"])
     words = token_join.split()
-    jejemon_transformed = apply_jejemon(words, jejemon)
-    response = " ".join(jejemon_transformed)
 
+    jejemon_transformed = []
+
+    for word in words:
+        punct = ''
+        if word and word[-1] in string.punctuation:
+            punct = word[-1]
+            word = word[:-1]
+
+        transformed = None
+        for key, variants in jejemon.items():
+            if word.lower() in variants:
+                transformed = key
+                break
+        if not transformed:
+            fuzzy = fuzzy_matching(word, jejemon)
+            transformed = fuzzy if fuzzy else word
+
+        jejemon_transformed.append(transformed + punct)
+
+    response = " ".join(jejemon_transformed)
     return response.capitalize()
 
-#1
+#---------------------------------------------------------------------------------
+#1 FIX NA DOUBLE CHECK MO NA LANG
 # need pa ifix yung sa multiple character kapag marami inenter si user na character 
 # dapat ang maging output ay yung normal text nung ininput ni user example
 # user: h3Ll0ooOooooo
 # dapat ganito output: Hello
 # Napansin ko kasi sa output natin ganito ang lumalabas output: Helloo 
 # may sumosobrang isa sa dulo
+#-----------------------------------------------------------------------------
 
-#2
+#------------------------------------------------------------------------------------
+#2 FIX NA DOUBLE CHECK MO NA LANG
 # next don yung special character need din ifix if hindi naman need inormamlize 
 # dapat sa output nandon pa rin siya pero kung need inormalize kailangan wala 
 # siya sa output kung ginamit siya as a jejemon text.
@@ -187,8 +213,10 @@ def token_area(text):
 # user input: @no? output Ano
 # kumbaga tinanggal niya special character kahit hindi naman dapat
 # tanggalin kase normal sa text na nagtatanong na may question mark
+#---------------------------------------------------------------------------------------
 
-#3
+#-------------------------------------------------------------------------------------------
+#3 FIX NA DOUBLE CHECK MO NA LANG
 # lastly yung emoticons pag chineck mo yung emoticons.json natin 
 # makikita mo may mga ganito " :), :(, :P, at iba pa" tapos may equivalent siyang emoji
 # parang ganito: ":)": "😊"
@@ -196,5 +224,4 @@ def token_area(text):
 # user input: :) output: 
 # wala siyang output pero dapat ganito
 # user input: s0br@n9 s4Y@ k0! :) output: Sobrang saya ko! 😊
-
-#ayun ang nakikita kong hindi pa okay sa program natin, yan na lang fifix.
+#--------------------------------------------------------------------------------------------
