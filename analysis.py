@@ -18,31 +18,14 @@ def levenshtein_ratio(s1, s2):
         for j in range(1, len2 + 1):
             cost = 0 if s1[i - 1] == s2[j - 1] else 1
             dp[i][j] = min(
-                dp[i - 1][j] + 1,
-                dp[i][j - 1] + 1,
-                dp[i - 1][j - 1] + cost
+                dp[i - 1][j] + 1,      
+                dp[i][j - 1] + 1,      
+                dp[i - 1][j - 1] + cost  
             )
 
     distance = dp[len1][len2]
     max_len = max(len1, len2)
     return (1 - distance / max_len) * 100 if max_len != 0 else 100
-
-def correct_typo(token, lexicon):
-    lowered = token.lower()
-    for key, variants in lexicon.items():
-        if lowered in variants:
-            return key
-
-    similarities = []
-    for key, variants in lexicon.items():
-        for variant in variants:
-            ratio = levenshtein_ratio(lowered, variant)
-            similarities.append((key, ratio))
-
-    best_match = max(similarities, key=lambda x: x[1])
-    if best_match[1] > 60:
-        return best_match[0]
-    return token
 
 def load_lexicons():
     with open("lexicon/alphabet.json", "r", encoding="utf-8") as f:
@@ -71,50 +54,98 @@ def normalize_word(word):
         return word
     
     word_lower = word.lower()
-    clean_word = re.sub(r'(.)\1+', r'\1', word_lower) 
-    return clean_word
-
-def normalize_text(text, alphabet):
-    reverse_lex = build_reverse_lexicon(alphabet)
-    lowered = text.lower()
-    for jej, norm in reverse_lex.items():
-        lowered = re.sub(rf"{re.escape(jej)}", norm, lowered)
-    
-    lowered = re.sub(r'(.)\1+', r'\1', lowered)  
-    return lowered
-
-def tokenize(text, alphabet, emoticons, special_chars):
-    reverse_lex = build_reverse_lexicon(alphabet)
-    text = text.strip()
-    lowered = text.lower()
+    normalized = []
     i = 0
-    tokens = []
+    
+    while i < len(word_lower):
+        current_char = word_lower[i]
+        normalized.append(current_char)
+        
+        # Check if current character is repeated
+        j = i + 1
+        while j < len(word_lower) and word_lower[j] == current_char:
+            j += 1
+        
+        repeat_count = j - i
+        
+        # Handle vowel repetitions (always reduce to one)
+        if current_char in 'aeiou':
+            if repeat_count > 1:
+                # Remove the extra added character (since we already added one)
+                if len(normalized) > 0 and normalized[-1] == current_char:
+                    normalized = normalized[:-1]
+                normalized.append(current_char)
+        
+        # Handle consonant repetitions
+        else:
+            # For consonants that are commonly doubled in English (l, s, etc.)
+            if current_char in 'ls' and repeat_count >= 2:
+                # Keep two characters
+                if repeat_count > 2:
+                    if len(normalized) > 0 and normalized[-1] == current_char:
+                        normalized = normalized[:-1]
+                    normalized.append(current_char)
+                normalized.append(current_char)
+            else:
+                # For other consonants, just keep one
+                if repeat_count > 1:
+                    if len(normalized) > 0 and normalized[-1] == current_char:
+                        normalized = normalized[:-1]
+                    normalized.append(current_char)
+        
+        i = j
+    
+    return ''.join(normalized)
+
+def unified_tokenize(text, alphabet, emoticons, special_chars, jejemon):
+    reverse_lex = build_reverse_lexicon(alphabet)  
+    text = text.strip()  
+    i = 0
+    tokens = []  
 
     max_len = max(
         max((len(k) for k in reverse_lex), default=0),
-        max((len(k) for k in emoticons), default=0)
+        max((len(k) for k in emoticons), default=0),
+        max((len(variant) for variants in jejemon.values() for variant in variants), default=0)
     )
 
     while i < len(text):
         found = False
         for length in range(max_len, 0, -1):
             if i + length <= len(text):
-                chunk = text[i:i+length].lower()
-                
-                clean_chunk = re.sub(r'(.)\1+', r'\1', chunk)
+                chunk = text[i:i+length].lower()  
+                original_chunk = text[i:i+length] 
+                clean_chunk = normalize_word(chunk)  
+
+                if chunk in emoticons:
+                    tokens.append({
+                        "type": "emoticon",
+                        "value": emoticons[chunk],
+                        "original": original_chunk   
+                    })
+                    i += length  
+                    found = True
+                    break
+
+               
+                for normal_word, variants in jejemon.items():
+                    if chunk in [v.lower() for v in variants] or clean_chunk in [v.lower() for v in variants]:
+                        tokens.append({
+                            "type": "jejemon",
+                            "value": normal_word, 
+                            "original": original_chunk
+                        })
+                        i += length
+                        found = True
+                        break
+                if found:
+                    break
 
                 if clean_chunk in reverse_lex:
                     tokens.append({
                         "type": "alphabet",
-                        "value": reverse_lex[clean_chunk]
-                    })
-                    i += length
-                    found = True
-                    break
-                elif chunk in emoticons:
-                    tokens.append({
-                        "type": "emoticon",
-                        "value": emoticons[chunk]
+                        "value": reverse_lex[clean_chunk],  
+                        "original": original_chunk
                     })
                     i += length
                     found = True
@@ -122,90 +153,120 @@ def tokenize(text, alphabet, emoticons, special_chars):
 
         if not found:
             char = text[i]
-            if char in special_chars:
+            if char in special_chars: 
                 tokens.append({
                     "type": "special_char",
-                    "value": char
+                    "value": char,
+                    "original": char
                 })
-            else:
+            elif char.isspace(): 
+                tokens.append({
+                    "type": "space",
+                    "value": char,
+                    "original": char
+                })
+            else:  
                 tokens.append({
                     "type": "unknown",
-                    "value": char.lower()
+                    "value": char.lower(),
+                    "original": char
                 })
             i += 1
 
-    return tokens
+    return tokens  
 
-def apply_jejemon(words, jejemon):
-    transformed = []
-    for word in words:
-        word_lower = word.lower()
-        found = False
-        for key, variants in jejemon.items():
-            if word_lower in variants:
-                transformed.append(key)
-                found = True
-                break
-        if not found:
-            transformed.append(word)
-    return transformed
-
-def fuzzy_matching(text, jejemon):
+def fuzzy_jejemon_matching(text, jejemon, threshold=80):
     text_lower = text.lower()
     best_match = None
     best_score = 0
 
     for normal, variants in jejemon.items():
         for variant in variants:
-            score = levenshtein_ratio(text_lower, variant.lower())
+            score = levenshtein_ratio(text_lower, variant.lower())  
             if score > best_score:
                 best_score = score
                 best_match = normal
+    return best_match if best_score > threshold else None 
 
-    if best_score > 80:
-        return best_match.capitalize()
-    return None
+
+def reconstruct_from_tokens(tokens, jejemon):
+    result_parts = []
+    current_word = []  
+
+    for token in tokens:
+        if token["type"] == "space":
+            if current_word:  
+                processed_word = process_word_with_fuzzy("".join(current_word), jejemon)
+                result_parts.append(processed_word)
+                current_word = []
+            result_parts.append(token["value"]) 
+        elif token["type"] in ["alphabet", "unknown"]:
+            current_word.append(token["value"]) 
+        elif token["type"] in ["jejemon", "emoticon"]:
+            if current_word: 
+                processed_word = process_word_with_fuzzy("".join(current_word), jejemon)
+                result_parts.append(processed_word)
+                current_word = []
+            result_parts.append(token["value"]) 
+        elif token["type"] == "special_char":
+            if current_word:
+                processed_word = process_word_with_fuzzy("".join(current_word), jejemon)
+                result_parts.append(processed_word + token["value"])
+                current_word = []
+            else:
+                result_parts.append(token["value"])
+
+   
+    if current_word:
+        processed_word = process_word_with_fuzzy("".join(current_word), jejemon)
+        result_parts.append(processed_word)
+
+    return "".join(result_parts) 
+
+
+def process_word_with_fuzzy(word, jejemon):
+    if not word.strip():
+        return word
+    
+    word_normalized = normalize_word(word)  
+    
+    for normal, variants in jejemon.items():
+        if word_normalized in [v.lower() for v in variants]:
+            return normal
+    
+ 
+    fuzzy_result = fuzzy_jejemon_matching(word_normalized, jejemon)
+    if fuzzy_result:
+        return fuzzy_result
+    
+    return word_normalized
+
 
 def token_area(text):
     alphabet, emoticons, special_chars, jejemon = load_lexicons()
-
-    fuzzy_result = fuzzy_matching(text, jejemon)
+    fuzzy_result = fuzzy_jejemon_matching(text, jejemon)
     if fuzzy_result:
-        return fuzzy_result
-
-    normalized_text = normalize_text(text, alphabet)
-    tokens = tokenize(normalized_text, alphabet, emoticons, special_chars)
-
+        return fuzzy_result.capitalize()
+    
+    tokens = unified_tokenize(text, alphabet, emoticons, special_chars, jejemon)
     with open("tokenized_output.json", "w", encoding="utf-8") as f:
         json.dump(tokens, f, indent=4, ensure_ascii=False)
+    
+    result = reconstruct_from_tokens(tokens, jejemon)
+    return result.strip().capitalize() if result.strip() else text
 
-    token_join = "".join(token["value"] for token in tokens if token["type"] in ["alphabet", "unknown", "special_char", "emoticon"])
-    words = token_join.split()
 
-    jejemon_transformed = []
+def preprocess_mixed_content(text):
+    emoticon_patterns = [':)', ':(', ':D', ':P', ';)', '<3', ':/']
+    for pattern in emoticon_patterns:
+        text = text.replace(pattern, f' {pattern} ')  
+    text = re.sub(r'\s+', ' ', text) 
+    return text.strip()
 
-    for word in words:
-        punct = ''
-        if word and word[-1] in string.punctuation:
-            punct = word[-1]
-            word = word[:-1]
 
-        word = normalize_word(word)
-
-        transformed = None
-        for key, variants in jejemon.items():
-            if word.lower() in variants:
-                transformed = key
-                break
-        if not transformed:
-            fuzzy = fuzzy_matching(word, jejemon)
-            transformed = fuzzy if fuzzy else word
-
-        jejemon_transformed.append(transformed + punct)
-
-    response = " ".join(jejemon_transformed)
-    return response.capitalize()
-
+def enhanced_token_area(text):
+    preprocessed_text = preprocess_mixed_content(text)
+    return token_area(preprocessed_text)
 #---------------------------------------------------------------------------------
 #1 FIX NA DOUBLE CHECK MO NA LANG(ETO NALANG HINDI KO MA FIX)
 # need pa ifix yung sa multiple character kapag marami inenter si user na character 
