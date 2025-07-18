@@ -1348,5 +1348,35 @@
     "timestamp": "2025-07-18T10:40:13.700130",
     "original": "o_o",
     "normalized": "\ud83d\udc40"
+  },
+  {
+    "timestamp": "2025-07-18T11:05:01.366721",
+    "original": "eowz powhz k@musT4 Ka n@? o_o uwu <3",
+    "normalized": "Hello po kamusta ka na? \ud83d\udc40 \ud83e\udd70 <e"
+  },
+  {
+    "timestamp": "2025-07-18T11:07:08.836165",
+    "original": "eowzo_o powhz k@musT4 Ka n@uwu ?<3",
+    "normalized": "Eowz\ud83d\udc40 po kamusta ka na\ud83e\udd70 ?\u2764\ufe0f"
+  },
+  {
+    "timestamp": "2025-07-18T11:07:08.862896",
+    "original": "",
+    "normalized": ""
+  },
+  {
+    "timestamp": "2025-07-18T11:08:23.894871",
+    "original": "eowz o_o powhz k@musT4 Ka n@uwu ?<3",
+    "normalized": "Hello \ud83d\udc40 po kamusta ka na\ud83e\udd70 ?\u2764\ufe0f"
+  },
+  {
+    "timestamp": "2025-07-18T11:08:56.374177",
+    "original": "<3<3<3",
+    "normalized": "\u2764\ufe0f\u2764\ufe0f\u2764\ufe0f"
+  },
+  {
+    "timestamp": "2025-07-18T11:09:14.875540",
+    "original": "<3 <3 <3",
+    "normalized": "\u2764\ufe0f \u2764\ufe0f \u2764\ufe0f"
   }
 ]

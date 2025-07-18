@@ -1,6 +1,22 @@
 [
     {
         "type": "emoticon",
-        "value": "👀"
+        "value": "❤️"
+    },
+    {
+        "type": "unknown",
+        "value": " "
+    },
+    {
+        "type": "emoticon",
+        "value": "❤️"
+    },
+    {
+        "type": "unknown",
+        "value": " "
+    },
+    {
+        "type": "emoticon",
+        "value": "❤️"
     }
 ]
