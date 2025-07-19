@@ -1,7 +1,122 @@
 [
     {
-        "type": "emoticon",
-        "value": "👀",
-        "original": "o_o"
+        "type": "jejemon",
+        "value": "hello",
+        "original": "eow"
+    },
+    {
+        "type": "space",
+        "value": " ",
+        "original": " "
+    },
+    {
+        "type": "alphabet",
+        "value": "p",
+        "original": "p"
+    },
+    {
+        "type": "jejemon",
+        "value": "you",
+        "original": "U"
+    },
+    {
+        "type": "space",
+        "value": " ",
+        "original": " "
+    },
+    {
+        "type": "special_char",
+        "value": ".",
+        "original": "."
+    },
+    {
+        "type": "special_char",
+        "value": ".",
+        "original": "."
+    },
+    {
+        "type": "special_char",
+        "value": ".",
+        "original": "."
+    },
+    {
+        "type": "space",
+        "value": " ",
+        "original": " "
+    },
+    {
+        "type": "alphabet",
+        "value": "m",
+        "original": "M"
+    },
+    {
+        "type": "alphabet",
+        "value": "x",
+        "original": "x"
+    },
+    {
+        "type": "alphabet",
+        "value": "t",
+        "original": "T"
+    },
+    {
+        "type": "unknown",
+        "value": "a",
+        "original": "a"
+    },
+    {
+        "type": "space",
+        "value": " ",
+        "original": " "
+    },
+    {
+        "type": "alphabet",
+        "value": "p",
+        "original": "p"
+    },
+    {
+        "type": "jejemon",
+        "value": "you",
+        "original": "u"
+    },
+    {
+        "type": "special_char",
+        "value": "?",
+        "original": "?"
+    },
+    {
+        "type": "space",
+        "value": " ",
+        "original": " "
+    },
+    {
+        "type": "alphabet",
+        "value": "j",
+        "original": "j"
+    },
+    {
+        "type": "alphabet",
+        "value": "e",
+        "original": "e"
+    },
+    {
+        "type": "alphabet",
+        "value": "j",
+        "original": "j"
+    },
+    {
+        "type": "alphabet",
+        "value": "e",
+        "original": "e"
+    },
+    {
+        "type": "alphabet",
+        "value": "j",
+        "original": "j"
+    },
+    {
+        "type": "alphabet",
+        "value": "e",
+        "original": "e"
     }
 ]

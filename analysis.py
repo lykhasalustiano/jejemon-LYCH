@@ -61,33 +61,26 @@ def normalize_word(word):
         current_char = word_lower[i]
         normalized.append(current_char)
         
-        # Check if current character is repeated
         j = i + 1
         while j < len(word_lower) and word_lower[j] == current_char:
             j += 1
         
         repeat_count = j - i
         
-        # Handle vowel repetitions (always reduce to one)
         if current_char in 'aeiou':
             if repeat_count > 1:
-                # Remove the extra added character (since we already added one)
                 if len(normalized) > 0 and normalized[-1] == current_char:
                     normalized = normalized[:-1]
                 normalized.append(current_char)
         
-        # Handle consonant repetitions
         else:
-            # For consonants that are commonly doubled in English (l, s, etc.)
             if current_char in 'ls' and repeat_count >= 2:
-                # Keep two characters
                 if repeat_count > 2:
                     if len(normalized) > 0 and normalized[-1] == current_char:
                         normalized = normalized[:-1]
                     normalized.append(current_char)
                 normalized.append(current_char)
             else:
-                # For other consonants, just keep one
                 if repeat_count > 1:
                     if len(normalized) > 0 and normalized[-1] == current_char:
                         normalized = normalized[:-1]
@@ -267,35 +260,11 @@ def preprocess_mixed_content(text):
 def enhanced_token_area(text):
     preprocessed_text = preprocess_mixed_content(text)
     return token_area(preprocessed_text)
-#---------------------------------------------------------------------------------
-#1 FIX NA DOUBLE CHECK MO NA LANG(ETO NALANG HINDI KO MA FIX)
-# need pa ifix yung sa multiple character kapag marami inenter si user na character 
-# dapat ang maging output ay yung normal text nung ininput ni user example
-# user: h3Ll0ooOooooo
-# dapat ganito output: Hello
-# Napansin ko kasi sa output natin ganito ang lumalabas output: Helloo 
-# may sumosobrang isa sa dulo
-#-----------------------------------------------------------------------------
 
-#------------------------------------------------------------------------------------
-#2 FIX NA DOUBLE CHECK MO NA LANG(DONE)
-# next don yung special character need din ifix if hindi naman need inormamlize 
-# dapat sa output nandon pa rin siya pero kung need inormalize kailangan wala 
-# siya sa output kung ginamit siya as a jejemon text.
-# example: user input: @No? output: Ano?
-# ang lumalabas kasi sa output natin ganito:
-# user input: @no? output Ano
-# kumbaga tinanggal niya special character kahit hindi naman dapat
-# tanggalin kase normal sa text na nagtatanong na may question mark
-#---------------------------------------------------------------------------------------
 
-#-------------------------------------------------------------------------------------------
-#3 FIX NA DOUBLE CHECK MO NA LANG(DONE)
-# lastly yung emoticons pag chineck mo yung emoticons.json natin 
-# makikita mo may mga ganito " :), :(, :P, at iba pa" tapos may equivalent siyang emoji
-# parang ganito: ":)": "😊"
-# problem? hindi pa siya na nonormalized sa ngayon ang nagiging output ay ganito
-# user input: :) output: 
-# wala siyang output pero dapat ganito
-# user input: s0br@n9 s4Y@ k0! :) output: Sobrang saya ko! 😊  
-#--------------------------------------------------------------------------------------------
+#1. eOw pOhwZz! KAmUzHtA DAuh?
+#2 c@n I lAab yowhz pohwz B4?
+#3. lab kit@ kz gUs2h k1T@!
+#4. @YAw KO s@ 1Ba gUs2h keo0 s@ýo kRAsh 😘 ❤
+#5. aylabyu kRUSh k@hiT prEnd l@N9 T1nGin MO $aK1N </3
+#6. OK3Y phewh bubbye :)
