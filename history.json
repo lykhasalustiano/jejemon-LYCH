@@ -2538,5 +2538,505 @@
     "timestamp": "2025-07-18T21:13:12.117385",
     "original": "o_o",
     "normalized": "\ud83d\udc40"
+  },
+  {
+    "timestamp": "2025-07-18T21:17:02.843537",
+    "original": "eOw pOhwZz! kAmUzHtA nAuh? ^_^",
+    "normalized": "Hello po! kamusta na you? \ud83d\ude0a"
+  },
+  {
+    "timestamp": "2025-07-18T21:17:48.141257",
+    "original": "gUdzNyTzz swEetDrEaMz mwaphz!:-*",
+    "normalized": "Goodnight sweetdreams mwa!\ud83d\ude18"
+  },
+  {
+    "timestamp": "2025-07-18T21:19:53.488428",
+    "original": "lab k1t@ kz gUs2h k1T@!owo",
+    "normalized": "Love kita kasi gusto kita!\ud83e\udd7a"
+  },
+  {
+    "timestamp": "2025-07-18T21:38:57.279080",
+    "original": "eOw pOhwZz! kAmUzHtA nAuh? \ud83d\ude0a",
+    "normalized": "Hello po! kamusta na you? \ud83d\ude0a"
+  },
+  {
+    "timestamp": "2025-07-18T21:39:12.277607",
+    "original": "c@n I lAab yowhz pohwz B4?",
+    "normalized": "Can i love you po ba?"
+  },
+  {
+    "timestamp": "2025-07-18T21:39:28.435778",
+    "original": "lab k1t@ kz gUs2h k1T@!\ud83e\udd7a",
+    "normalized": "Love kita kasi gusto kita!\ud83e\udd7a"
+  },
+  {
+    "timestamp": "2025-07-18T21:39:39.892269",
+    "original": "@Y4w K0 $@ 1Ba gUs2h k0oO s@\u00ff0 kR4sh :-* <3",
+    "normalized": "Ayaw ko sa iba gusto ko sayo crush \ud83d\ude18 \u2764\ufe0f"
+  },
+  {
+    "timestamp": "2025-07-18T21:39:53.972080",
+    "original": "aylabyu kRuSh k@h1T prEnd l@N9 T1nGin M0 $aK1N </3",
+    "normalized": "I love you crush kahit friend lang tingin mo sakin \ud83d\udc94"
+  },
+  {
+    "timestamp": "2025-07-18T21:40:08.396509",
+    "original": "0K3Y ph0wh buhbye (\u2565\ufe4f\u2565)",
+    "normalized": "Okey po bye \ud83d\ude2d"
+  },
+  {
+    "timestamp": "2025-07-18T21:41:03.457411",
+    "original": "eOw pOhwZz! kAmUzHtA nAuh? \ud83d\ude0a",
+    "normalized": "Hello po! kamusta na you? \ud83d\ude0a"
+  },
+  {
+    "timestamp": "2025-07-18T21:41:14.758440",
+    "original": "c@n I lAab yowhz pohwz B4?",
+    "normalized": "Can i love you po ba?"
+  },
+  {
+    "timestamp": "2025-07-18T21:41:27.107711",
+    "original": "lab k1t@ kz gUs2h k1T@!\ud83e\udd7a",
+    "normalized": "Love kita kasi gusto kita!\ud83e\udd7a"
+  },
+  {
+    "timestamp": "2025-07-18T21:41:41.445147",
+    "original": "@Y4w K0 $@ 1Ba gUs2h k0oO s@\u00ff0 kR4sh :-* <3",
+    "normalized": "Ayaw ko sa iba gusto ko sayo crush \ud83d\ude18 \u2764\ufe0f"
+  },
+  {
+    "timestamp": "2025-07-18T21:41:59.682296",
+    "original": "aylabyu kRuSh k@h1T prEnd l@N9 T1nGin M0 $aK1N </3",
+    "normalized": "I love you crush kahit friend lang tingin mo sakin \ud83d\udc94"
+  },
+  {
+    "timestamp": "2025-07-18T21:42:13.788019",
+    "original": "0K3Y ph0wh buhbye (\u2565\ufe4f\u2565)",
+    "normalized": "Okey po bye \ud83d\ude2d"
+  },
+  {
+    "timestamp": "2025-07-24T09:38:04.851468",
+    "original": "h3lL0 k4m\u00fcsT4 k4n4 Fr!3Nd m4t4g4l n4 T4Y0Ng h!nD! n4gK!K!T4",
+    "normalized": "H3ll0 k4m\u00fcst4 k4n4 fr ! 3nd m4t4g4l n4 t4y0ng h ! nd ! n4gk ! k ! t4"
+  },
+  {
+    "timestamp": "2025-07-24T09:38:32.642165",
+    "original": "k4musta",
+    "normalized": "K4musta"
+  },
+  {
+    "timestamp": "2025-07-24T09:41:07.041211",
+    "original": "h#llo",
+    "normalized": "H#llo"
+  },
+  {
+    "timestamp": "2025-07-24T09:41:24.409933",
+    "original": "h3lL0 k4m\u00fcsT4 k4n4 Fr!3Nd m4t4g4l n4 T4Y0Ng h!nD! n4gK!K!T4",
+    "normalized": "Hello kamusta kana fr!end matagal na tayong h!nd! nagk!k!ta"
+  },
+  {
+    "timestamp": "2025-07-24T09:42:15.135027",
+    "original": "k\u00fcm4!N K4 n4 B4 0R N0T Y3T N4P4K4 t4m4d m0 T4L4G4!",
+    "normalized": "Kuma!n ka na ba or not yet napaka tamad mo talaga!"
+  },
+  {
+    "timestamp": "2025-07-24T09:43:37.182628",
+    "original": "k\u00fcm4!N K4 n4 B4 0R N0T Y3T N4P4K4 t4m4d m0 T4L4G4!",
+    "normalized": "Kuma!n ka na ba or not yet napaka tamad mo talaga!"
+  },
+  {
+    "timestamp": "2025-07-24T09:43:57.340630",
+    "original": "k\u00fcm4!N K4 n4 B4 0R N0T Y3T N4P4K4 t4m4d m0 T4L4G4!",
+    "normalized": "Kuma!n ka na ba or not yet napaka tamad mo talaga!"
+  },
+  {
+    "timestamp": "2025-07-24T09:45:58.119684",
+    "original": "k\\u00fcm4!N K4 n4 B4 0R N0T Y3T N4P4K4 t4m4d m0 T4L4G4!",
+    "normalized": "K\\uofcma!n ka na ba or not yet napaka tamad mo talaga!"
+  },
+  {
+    "timestamp": "2025-07-24T09:47:30.627782",
+    "original": "k\u00fcm4!N K4 n4 B4 0R N0T Y3T N4P4K4 t4m4d m0 T4L4G4!",
+    "normalized": "Kuma!n ka na ba or not yet napaka tamad mo talaga!"
+  },
+  {
+    "timestamp": "2025-07-24T09:47:37.793311",
+    "original": "k\u00fcm4!N K4 n4 B4 0R N0T Y3T N4P4K4 t4m4d m0 T4L4G4!",
+    "normalized": "Kuma!n ka na ba or not yet napaka tamad mo talaga!"
+  },
+  {
+    "timestamp": "2025-07-24T09:47:39.570510",
+    "original": "k\u00fcm4!N K4 n4 B4 0R N0T Y3T N4P4K4 t4m4d m0 T4L4G4!",
+    "normalized": "Kuma!n ka na ba or not yet napaka tamad mo talaga!"
+  },
+  {
+    "timestamp": "2025-07-24T09:50:27.127283",
+    "original": "k\u00fcm4!N K4 n4 B4 0R N0T Y3T N4P4K4 t4m4d m0 T4L4G4!",
+    "normalized": "Kuma!n ka na ba or not yet napaka tamad mo talaga!"
+  },
+  {
+    "timestamp": "2025-07-24T09:51:23.012189",
+    "original": "k\u00fcm4!N K4 n4 B4 0R N0T Y3T N4P4K4 t4m4d m0 T4L4G4!",
+    "normalized": "Kumain ka na ba or not yet napaka tamad mo talaga!"
+  },
+  {
+    "timestamp": "2025-07-24T10:28:10.663519",
+    "original": "k\u00fcm4!N K4 n4 B4 0R N0T Y3T N4P4K4 t4m4d m0 T4L4G4!",
+    "normalized": "Kumain ka na ba or not yet napaka tamad mo talaga!"
+  },
+  {
+    "timestamp": "2025-07-24T10:28:49.181037",
+    "original": "h3ll0oOOOoo",
+    "normalized": "Helo"
+  },
+  {
+    "timestamp": "2025-07-24T10:29:40.447229",
+    "original": "k\u00fcm4!N K4 n4 B4 0R N0T Y3T N4P4K4 t4m4d m0 T4L4G4!",
+    "normalized": "Kumain ka na ba or not yet napaka tamad mo talaga!"
+  },
+  {
+    "timestamp": "2025-07-24T10:38:17.932504",
+    "original": "",
+    "normalized": ""
+  },
+  {
+    "timestamp": "2025-07-24T10:40:38.447339",
+    "original": "k\u00fcm4!N K4 n4 B4 0R N0T Y3T N4P4K4 t4m4d m0 T4L4G4!",
+    "normalized": "Kumain ka na ba or not yet napaka tamad mo talaga!"
+  },
+  {
+    "timestamp": "2025-07-24T10:40:51.219614",
+    "original": "heLl0o",
+    "normalized": "Helo"
+  },
+  {
+    "timestamp": "2025-07-24T10:43:17.294506",
+    "original": "heLl0o",
+    "normalized": "Helo"
+  },
+  {
+    "timestamp": "2025-07-24T10:57:22.254703",
+    "original": "k\u00fcm4!N K4 n4 B4 0R N0T Y3T N4P4K4 t4m4d m0 T4L4G4!",
+    "normalized": "Kumain ka na ba or not yet napaka tamad mo talaga!"
+  },
+  {
+    "timestamp": "2025-07-24T13:30:50.183033",
+    "original": "!'m g0!Ng t0 P4RtY Ng4y0n b4h4l4 K4 fR!3nD K\u00fcNg 4Y4W M0 s\u00fcm4m4",
+    "normalized": "!'m go!ng to parthank you ngayon bahala ka fr!end kung ayaw mo sumama"
+  },
+  {
+    "timestamp": "2025-07-24T13:32:17.300818",
+    "original": "!'m g0!Ng t0 P4RtY Ng4y0n b4h4l4 K4 fR!3nD K\u00fcNg 4Y4W M0 s\u00fcm4m4",
+    "normalized": "!'m go!ng to parthank you ngayon bahala ka fr!end kung ayaw mo sumama"
+  },
+  {
+    "timestamp": "2025-07-24T13:32:54.557107",
+    "original": "P4RtY Ng4y0n",
+    "normalized": "Parthank you ngayon"
+  },
+  {
+    "timestamp": "2025-07-24T13:33:48.750125",
+    "original": "P4RtY",
+    "normalized": "Parthank you"
+  },
+  {
+    "timestamp": "2025-07-25T11:22:34.913742",
+    "original": "h3llo",
+    "normalized": "Helo"
+  },
+  {
+    "timestamp": "2025-07-25T11:23:11.191271",
+    "original": "K4MUST@",
+    "normalized": "Kamusta"
+  },
+  {
+    "timestamp": "2025-07-25T11:45:29.681824",
+    "original": "kul3l@t k@",
+    "normalized": "Kulelat ka"
+  },
+  {
+    "timestamp": "2025-07-25T11:46:56.142591",
+    "original": "4L4M M0, K4N!N4 h4b4nG P4\u00fcw! 4k0 G4L!Ng sCh00L, b!gL4 n4 L4Ng b\u00fcm\u00fch0s 'Y\u00fcNg \u00fcL4N T4P0S W4L4 p4 T4L4G4 4K0Ng p4y0nG, k4y4 4y\u00fcn, B4S4 4K0Ng \u00fcM\u00fcW! 4T 4nG L4M!G-L4M!G P4 nG H4Ng!n.",
+    "normalized": "Alam mo, kan!na habang pauw! ako gal!ng schol, b!gla na lang bumuhos 'yung ulan tapos wala pa talaga akong payong, kaya ayun, basa akong umuw! at ang lam!g-lam!g pa ng hang!n."
+  },
+  {
+    "timestamp": "2025-07-25T11:48:56.233061",
+    "original": "452",
+    "normalized": "As2"
+  },
+  {
+    "timestamp": "2025-07-25T12:37:04.401605",
+    "original": "4L4M M0, K4N!N4 h4b4nG P4\u00fcw! 4k0 G4L!Ng sCh00L, b!gL4 n4 L4Ng b\u00fcm\u00fch0s 'Y\u00fcNg \u00fcL4N T4P0S W4L4 p4 T4L4G4 4K0Ng p4y0nG, k4y4 4y\u00fcn, B4S4 4K0Ng \u00fcM\u00fcW! 4T 4nG L4M!G-L4M!G P4 nG H4Ng!n.",
+    "normalized": "Alam mo, kan!na habang pauw! ako gal!ng schol, b!gla na lang bumuhos 'yung ulan tapos wala pa talaga akong payong, kaya ayun, basa akong umuw! at ang lam!g-lam!g pa ng hang!n."
+  },
+  {
+    "timestamp": "2025-07-25T12:44:17.855136",
+    "original": "kANina, hAbang pauWi aKo gAliNg sA pAarAlAn, bIgLa nAlAng bUmUhOs aNg mAlAkAs nA ulAn kAHit sObrAng inIt nG pAnAhOn kAnInAng uMaga. wAlA aKong dAlAng pAyOng, kAya nApIlItAn aKong tUmAkbo pApUntA sA sAkAyAn sAmAnG tInAtAkpAn kO ng bAg aNg ulO kO. pAgdAtIng kO sA tErmInAl, bAsAng-bAsA nA aK0 at nIlAlAmIg pA dAhIl aNg lAkAs dIn ng hAngIn. sAnA bUkAs, mAgInG mAs mAgAndA nA aNg pAnAhOn.",
+    "normalized": "Kanina, habang pauwi ako galing sa paralan, bigla nalang bumyouos ang malakas na ulan kahit sobrang init ng panahon kaninang umaga. wala akong dalang payong, kaya napilitan akong tumakbo papunta sa sakayan samang tinatakpan ko ng bag ang ulo ko. pagdating ko sa terminal, basang-basa na ako at nilalamig pa dahil ang lakas din ng hangin. sana bukas, maging mas maganda na ang panahon."
+  },
+  {
+    "timestamp": "2025-07-25T12:46:31.050156",
+    "original": "H3ll0",
+    "normalized": "Hello"
+  },
+  {
+    "timestamp": "2025-07-25T12:46:34.848719",
+    "original": "h3llo000",
+    "normalized": "Helo"
+  },
+  {
+    "timestamp": "2025-07-25T12:50:32.726538",
+    "original": "n4h m1m1ss qoe n4h 4ng 1LOv3 y0u moe soreh n4h b3hby qu w4g k4 bg m4g t@mpuh an0 m\u2206N nAg4wA k0 s4nat pAtaWariN m0",
+    "normalized": "Nah mimis qoe nah ang ilove you moe soreh nah behby qu wag ka bg mag tampyou ano m\u2206n nagawa ko sanat patawarin mo"
+  },
+  {
+    "timestamp": "2025-07-25T12:51:18.314254",
+    "original": "\ud83d\ude1c\ud83d\ude1b\ud83e\udd70Anong masarap na KAPE? edi KAPEling ka samahan mopa ng DECAF DECAFapakawalan mamahalin kita i love my life because my life is you\ud83e\udd2a\ud83d\ude18\ud83d\ude02\ud83e\udd23",
+    "normalized": "\ud83d\ude1c\ud83d\ude1b\ud83e\udd70anong masarap na kape? edi kapeling ka samahan mopa ng decaf decafapakawalan mamahalin kita i love my life because my life is you\ud83e\udd2a\ud83d\ude18\ud83d\ude02\ud83e\udd23"
+  },
+  {
+    "timestamp": "2025-07-25T12:53:22.782751",
+    "original": "kAn1n4 h4b4nG p4uW1 4q0 g4l1nG sA pA4r4l4n, b1gL4 n4 l4nG bUmUh0s aNg m4L4k4s n4 uL4n kAh1T s0bR4nG 1n1T nG p4n4h0n k4n1n4nG uM4g4. W4L4 4q0nG d4L4nG p4yUnG0, k4y4 n4p1L1T4n 4q0nG tUm4kB0 p4pUnT4 s4 s4k4y4n h4b4nG t1n4t4kp4n q0 nG b4G aNg uL0 q0. p4Gd4T1nG q0 s4 t3rm1n4L, b4s4nG-b4s4 n4 4q0 4T n1L4L4m1G p4 d4H1L 4nG L4k4s d1n nG h4nG1n. s4n4 bUk4s, m4G1nG m4s m4G4nd4 n4 4nG p4n4h0n.",
+    "normalized": "Kanina habang pauwi aqo galing sa paralan, bigla na lang bumyouos ang malakas na ulan kahit sobrang init ng panahon kaninang umaga. wala aqong dalang payungo, kaya napilitan aqong tumakbo papunta sa sakayan habang tinatakpan qo ng bag ang ulo qo. pagdating qo sa terminal, basang-basa na aqo at nilalamig pa dahil ang lakas din ng hangin. sana bukas, maging mas maganda na ang panahon."
+  },
+  {
+    "timestamp": "2025-07-25T17:52:04.743850",
+    "original": "hhH4nGGGgG4nGzz k3iiLLaNn aQohh m4GtttT33zzzzzz >.<",
+    "normalized": "Hangangz keilan aqoh magtez >.<"
+  },
+  {
+    "timestamp": "2025-07-25T17:52:19.252261",
+    "original": "hhH4nGGGgG4nGzz k3iiLLaNn aQohh m4GtttT33zzzzzz :(",
+    "normalized": "Hangangz keilan aqoh magtez \ud83d\ude14"
+  },
+  {
+    "timestamp": "2025-07-25T17:53:10.863909",
+    "original": "school",
+    "normalized": "Schol"
+  },
+  {
+    "timestamp": "2025-07-25T17:54:55.025720",
+    "original": "o_o",
+    "normalized": "\ud83d\udc40"
+  },
+  {
+    "timestamp": "2025-07-25T17:55:08.838162",
+    "original": ":p",
+    "normalized": ":p"
+  },
+  {
+    "timestamp": "2025-07-25T17:55:14.020624",
+    "original": ":P",
+    "normalized": ":p"
+  },
+  {
+    "timestamp": "2025-07-25T17:55:27.220094",
+    "original": ":P",
+    "normalized": ":p"
+  },
+  {
+    "timestamp": "2025-07-25T17:55:45.904877",
+    "original": ";)",
+    "normalized": "\ud83d\ude09"
+  },
+  {
+    "timestamp": "2025-07-25T18:37:36.554127",
+    "original": "H3ll0ooO0",
+    "normalized": "Helloo"
+  },
+  {
+    "timestamp": "2025-07-25T18:48:15.204871",
+    "original": "h3ll0",
+    "normalized": "Hello"
+  },
+  {
+    "timestamp": "2025-07-25T18:48:21.107572",
+    "original": "<3",
+    "normalized": "\u2764\ufe0f"
+  },
+  {
+    "timestamp": "2025-07-25T18:48:25.390985",
+    "original": "epal",
+    "normalized": "Epal"
+  },
+  {
+    "timestamp": "2025-07-25T18:48:36.322479",
+    "original": "3p@l!",
+    "normalized": "Epal!"
+  },
+  {
+    "timestamp": "2025-07-25T18:48:44.367387",
+    "original": "k@!nis",
+    "normalized": "Ka!nis"
+  },
+  {
+    "timestamp": "2025-07-25T18:49:26.481149",
+    "original": "k@!nI$!",
+    "normalized": "Kainisi"
+  },
+  {
+    "timestamp": "2025-07-25T18:51:38.922122",
+    "original": "H3ll0oO",
+    "normalized": "Hello"
+  },
+  {
+    "timestamp": "2025-07-25T18:54:27.632215",
+    "original": "kamuzt@hHh?!",
+    "normalized": "Kamusta?!"
+  },
+  {
+    "timestamp": "2025-07-25T18:54:52.902382",
+    "original": "k@mu$th@aA",
+    "normalized": "Kamustha"
+  },
+  {
+    "timestamp": "2025-07-25T19:09:08.055102",
+    "original": "kh@aAamu$th@",
+    "normalized": "Kh@amu$th@"
+  },
+  {
+    "timestamp": "2025-07-25T19:09:31.211421",
+    "original": "h3ll0Ooo",
+    "normalized": "Hello"
+  },
+  {
+    "timestamp": "2025-07-25T19:09:44.933075",
+    "original": "$alam@t",
+    "normalized": "$alam@t"
+  },
+  {
+    "timestamp": "2025-07-25T19:27:48.623690",
+    "original": "$alam@t",
+    "normalized": "$alam@t"
+  },
+  {
+    "timestamp": "2025-07-25T19:29:24.633016",
+    "original": "$alam@t",
+    "normalized": "Salamat"
+  },
+  {
+    "timestamp": "2025-07-25T21:15:27.229907",
+    "original": "kh@mU$t4",
+    "normalized": "Kamusta"
+  },
+  {
+    "timestamp": "2025-07-25T21:16:12.423208",
+    "original": "kh@muztTttt4h",
+    "normalized": "Kamusta"
+  },
+  {
+    "timestamp": "2025-07-25T21:16:29.811477",
+    "original": "H3ll0oOoo",
+    "normalized": "Hello"
+  },
+  {
+    "timestamp": "2025-07-25T21:16:30.907144",
+    "original": "",
+    "normalized": ""
+  },
+  {
+    "timestamp": "2025-07-25T21:16:49.742779",
+    "original": "Sh0oOoooollll",
+    "normalized": "Sholl"
+  },
+  {
+    "timestamp": "2025-07-25T21:17:00.114638",
+    "original": "scho00000ooolll",
+    "normalized": "Scholl"
+  },
+  {
+    "timestamp": "2025-07-25T21:17:19.228381",
+    "original": "sch00ll",
+    "normalized": "Scholl"
+  },
+  {
+    "timestamp": "2025-07-25T21:18:09.132805",
+    "original": "mh@d1liM",
+    "normalized": "Mhadilim"
+  },
+  {
+    "timestamp": "2025-07-25T21:19:12.205952",
+    "original": "kh@m0st4?",
+    "normalized": "Kamosta?"
+  },
+  {
+    "timestamp": "2025-07-25T21:21:35.622596",
+    "original": "kANina, hAbang pauWi aKo gAliNg sA pAarAlAn, bIgLa nAlAng bUmUhOs aNg mAlAkAs nA ulAn kAHit sObrAng inIt nG pAnAhOn kAnInAng uMaga. wAlA aKong dAlAng pAyOng, kAya nApIlItAn aKong tUmAkbo pApUntA sA sAkAyAn sAmAnG tInAtAkpAn kO ng bAg aNg ulO kO. pAgdAtIng kO sA tErmInAl, bAsAng-bAsA nA aK0 at nIlAlAmIg pA dAhIl aNg lAkAs dIn ng hAngIn. sAnA bUkAs, mAgInG mAs mAgAndA nA aNg pAnAhOn.",
+    "normalized": "Kanina, habang pauwi ako galing sa paralan, bigla nalang bumyouos ang malakas na ulan kahit sobrang init ng panahon kaninang umaga. wala akong dalang payong, kaya napilitan akong tumakbo papunta sa sakayan samang tinatakpan ko ng bag ang ulo ko. pagdating ko sa terminal, basang-basa na ako at nilalamig pa dahil ang lakas din ng hangin. sana bukas, maging mas maganda na ang panahon."
+  },
+  {
+    "timestamp": "2025-07-25T21:22:20.332334",
+    "original": "!k@w",
+    "normalized": "!kaw"
+  },
+  {
+    "timestamp": "2025-07-25T21:30:04.265743",
+    "original": "eow phowhzx! mztah nawh? xempreh akez okayz langxzz, enj0y lng t0 da maxx!",
+    "normalized": "Hello phowhzx! mztah nawh? syempreh akez okayz langxz, enjoy lng to da max!"
+  },
+  {
+    "timestamp": "2025-07-25T21:30:30.336966",
+    "original": "$cho0oOl",
+    "normalized": "Schol"
+  },
+  {
+    "timestamp": "2025-07-25T21:31:46.775655",
+    "original": "s$inNeeee",
+    "normalized": "Ssine"
+  },
+  {
+    "timestamp": "2025-07-25T21:32:01.095421",
+    "original": "s$hinNeeee",
+    "normalized": "Sshine"
+  },
+  {
+    "timestamp": "2025-07-25T21:32:15.749791",
+    "original": "F1$ssH",
+    "normalized": "Fissh"
+  },
+  {
+    "timestamp": "2025-07-25T21:32:27.863767",
+    "original": "F1$ssH",
+    "normalized": "Fissh"
+  },
+  {
+    "timestamp": "2025-07-25T21:36:52.105562",
+    "original": "F1$ssH",
+    "normalized": "Fissh"
+  },
+  {
+    "timestamp": "2025-07-25T21:37:01.995534",
+    "original": "F1$ssH",
+    "normalized": "Fissh"
+  },
+  {
+    "timestamp": "2025-07-25T21:38:30.097924",
+    "original": "k@aaamUsta?",
+    "normalized": "Kamusta?"
+  },
+  {
+    "timestamp": "2025-07-25T21:38:44.257924",
+    "original": "FishHhhhh",
+    "normalized": "Fish"
+  },
+  {
+    "timestamp": "2025-07-25T21:40:09.140929",
+    "original": "H3ll0Oooo",
+    "normalized": "Hello"
+  },
+  {
+    "timestamp": "2025-07-25T21:40:37.582113",
+    "original": "K@mowzth4",
+    "normalized": "Kamowztha"
+  },
+  {
+    "timestamp": "2025-07-25T21:40:52.785930",
+    "original": "F1s$ssssshhhhhHhh",
+    "normalized": "Fissh"
+  },
+  {
+    "timestamp": "2025-07-25T21:43:19.618327",
+    "original": "iiiisssd@aaa",
+    "normalized": "Issda"
   }
 ]

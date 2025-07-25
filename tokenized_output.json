@@ -1,7 +1,47 @@
 [
     {
-        "type": "emoticon",
-        "value": "👀",
-        "original": "o_o"
+        "type": "alphabet",
+        "value": "i",
+        "original": "iiii"
+    },
+    {
+        "type": "alphabet",
+        "value": "s",
+        "original": "s"
+    },
+    {
+        "type": "alphabet",
+        "value": "s",
+        "original": "s"
+    },
+    {
+        "type": "alphabet",
+        "value": "s",
+        "original": "s"
+    },
+    {
+        "type": "unknown",
+        "value": "d",
+        "original": "d"
+    },
+    {
+        "type": "alphabet",
+        "value": "a",
+        "original": "@"
+    },
+    {
+        "type": "unknown",
+        "value": "a",
+        "original": "a"
+    },
+    {
+        "type": "unknown",
+        "value": "a",
+        "original": "a"
+    },
+    {
+        "type": "unknown",
+        "value": "a",
+        "original": "a"
     }
 ]
