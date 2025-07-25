@@ -50,9 +50,11 @@ def normalize_word(word):
     word = word.lower()
     result = []
     i = 0
+
     while i < len(word):
         char = word[i]
         result.append(char)
+
         j = i + 1
         while j < len(word) and word[j] == char:
             j += 1
@@ -67,6 +69,7 @@ def normalize_word(word):
         elif repeat_count > 1:
             result.pop()
             result.append(char)
+
         i = j
     return ''.join(result)
 
