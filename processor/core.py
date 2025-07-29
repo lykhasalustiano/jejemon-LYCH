@@ -1,3 +1,6 @@
+# take note: paki linis na din whole code after magawa and paki check other folder 
+# kung may need din idagdag sa mga bawat file para smooth ang program also paki accurate lahat ng name ng function.
+
 import json
 import re
 

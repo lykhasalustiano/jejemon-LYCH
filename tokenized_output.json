@@ -1,47 +1,57 @@
 [
     {
-        "type": "alphabet",
-        "value": "i",
-        "original": "iiii"
+        "type": "jejemon",
+        "value": "goodnight",
+        "original": "gUdzNyTzz"
+    },
+    {
+        "type": "space",
+        "value": " ",
+        "original": " "
     },
     {
         "type": "alphabet",
-        "value": "s",
-        "original": "s"
+        "value": "b",
+        "original": "b"
     },
     {
         "type": "alphabet",
-        "value": "s",
-        "original": "s"
+        "value": "r",
+        "original": "r"
     },
     {
         "type": "alphabet",
-        "value": "s",
-        "original": "s"
-    },
-    {
-        "type": "unknown",
-        "value": "d",
-        "original": "d"
+        "value": "o",
+        "original": "0"
     },
     {
         "type": "alphabet",
-        "value": "a",
-        "original": "@"
+        "value": "t",
+        "original": "T"
     },
     {
-        "type": "unknown",
-        "value": "a",
-        "original": "a"
+        "type": "alphabet",
+        "value": "h",
+        "original": "h"
     },
     {
-        "type": "unknown",
-        "value": "a",
-        "original": "a"
+        "type": "alphabet",
+        "value": "e",
+        "original": "3"
     },
     {
-        "type": "unknown",
-        "value": "a",
-        "original": "a"
+        "type": "alphabet",
+        "value": "r",
+        "original": "R"
+    },
+    {
+        "type": "space",
+        "value": " ",
+        "original": " "
+    },
+    {
+        "type": "emoticon",
+        "value": "❤️",
+        "original": "<3"
     }
 ]

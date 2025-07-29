@@ -1,5 +1,8 @@
-from tokenizer.process_word import process_word_with_fuzzy
+# take note: paki linis na din whole code after magawa and paki check other folder 
+# kung may need din idagdag sa mga bawat file para smooth ang program also paki accurate lahat ng name ng function.
 
+from tokenizer.process_word import process_word_with_fuzzy
+# from here...
 def reconstruct_from_tokens(tokens, jejemon, corpora):
     result = []
     current_word = []
@@ -24,5 +27,7 @@ def reconstruct_from_tokens(tokens, jejemon, corpora):
 
     if current_word:
         result.append(process_word_with_fuzzy("".join(current_word), jejemon, corpora))
-
+# to here...
     return "".join(result)
+
+# paki dagdag ang corpora para ma tokenize din.

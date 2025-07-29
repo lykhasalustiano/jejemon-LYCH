@@ -1,6 +1,10 @@
+# take note: paki linis na din whole code after magawa and paki check other folder 
+# kung may need din idagdag sa mga bawat file para smooth ang program also paki accurate lahat ng name ng function.
+
 from normalization.normalization_word import normalize_word
 from utils.lexicon_loader import build_reverse_lexicon
 
+# from here...
 def tokenize_text(text, alphabet, emoticons, special_chars, jejemon):
     reverse_lex = build_reverse_lexicon(alphabet)
     tokens = []
@@ -51,4 +55,7 @@ def tokenize_text(text, alphabet, emoticons, special_chars, jejemon):
             else:
                 tokens.append({"type": "unknown", "value": char.lower(), "original": char})
             i += 1
+# to here...
     return tokens
+
+# paki dagdag ang corpora para ma tokenize din.

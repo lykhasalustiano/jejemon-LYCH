@@ -28,7 +28,7 @@ def main():
             show_history()
             continue
 
-        tokenized = enhanced_token_area(text)  # updated function call
+        tokenized = enhanced_token_area(text)  
         save_translation(text, tokenized)
         display(text, tokenized)
 
