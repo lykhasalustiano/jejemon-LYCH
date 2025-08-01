@@ -1,57 +1,27 @@
 [
     {
-        "type": "jejemon",
-        "value": "goodnight",
-        "original": "gUdzNyTzz"
-    },
-    {
-        "type": "space",
-        "value": " ",
-        "original": " "
+        "type": "alphabet",
+        "value": "i",
+        "original": "!"
     },
     {
         "type": "alphabet",
-        "value": "b",
-        "original": "b"
+        "value": "k",
+        "original": "k"
     },
     {
         "type": "alphabet",
-        "value": "r",
-        "original": "r"
+        "value": "a",
+        "original": "@"
     },
     {
         "type": "alphabet",
-        "value": "o",
-        "original": "0"
+        "value": "w",
+        "original": "w"
     },
     {
-        "type": "alphabet",
-        "value": "t",
-        "original": "T"
-    },
-    {
-        "type": "alphabet",
-        "value": "h",
-        "original": "h"
-    },
-    {
-        "type": "alphabet",
-        "value": "e",
-        "original": "3"
-    },
-    {
-        "type": "alphabet",
-        "value": "r",
-        "original": "R"
-    },
-    {
-        "type": "space",
-        "value": " ",
-        "original": " "
-    },
-    {
-        "type": "emoticon",
-        "value": "❤️",
-        "original": "<3"
+        "type": "special_char",
+        "value": "?",
+        "original": "?"
     }
 ]

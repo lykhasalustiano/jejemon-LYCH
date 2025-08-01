@@ -1,37 +1,37 @@
-# take note: paki linis na din whole code after magawa and paki check other folder 
-# kung may need din idagdag sa mga bawat file para smooth ang program also paki accurate lahat ng name ng function.
+# This code is part of a text normalization module that processes words
+# to handle various forms of text input, including jejemon variants, emoticons,
+# and special characters. It includes functions for repeated character handling,
+# and normalizing words based on predefined lexicons.
 
-def normalize_word(word):
+def normalize_word(word, alphabet=None, word_special_chars=None):
     if not word:
         return word
-    word = word.lower()
+
+    substitutions = {}
+    if alphabet:
+        for standard, variants in alphabet.items():
+            for variant in variants:
+                substitutions[str(variant)] = standard
+    if word_special_chars:
+        substitutions.update(word_special_chars)
+
+    word = ''.join([substitutions.get(char, char) for char in word.lower()])
+
     result = []
     i = 0
+    # Process the word to handle repeated characters and vowels
     while i < len(word):
         char = word[i]
-        result.append(char)
         j = i + 1
         while j < len(word) and word[j] == char:
             j += 1
-        repeat_count = j - i
-        #here to...
-        if char in 'aeiou' and repeat_count > 1:
-            result.pop()
+            
+        if char in 'aeiou':
             result.append(char)
-        elif char in 'ls' and repeat_count > 2:
-            result.pop()
+        elif char in 'ls' and (j - i) > 2:
             result.append(char * 2)
-        elif repeat_count > 1:
-            result.pop()
+        else:
             result.append(char)
         i = j
-        #here...
+    
     return ''.join(result)
-
-# Paki-fix ito.
-
-# pwede din na if else tapos magkasama na lang si vowels at consonant tapos if na notify ng system 
-# or recognized ni sys na need bawasan yung multiple character babawasan pero kung hindi else irereturn niya yung normal text 
-# sa ininput example: input: "H3ll0oOo" may multiple char yan so ang mangyayari sa condition if yung 
-# char ay multiple babawasan niya yon mapa vowels or consonant tapos else kung hindi naman need bawasan char dahil normal
-# lang yung bilang ng letter rereturn niya lang and ang output ay: "Hello" 
